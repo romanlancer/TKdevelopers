@@ -71,4 +71,22 @@ button {
 .container {
   margin: 0 auto;
 }
+
+@media screen and (min-width: var(--mobile)) {
+  .container {
+    width: var(--mobile);
+  }
+}
+
+@media screen and (min-width: var(--tablet)) {
+  .container {
+    width: var(--tablet);
+  }
+}
+
+@media screen and (min-width: var(--desktop)) {
+  .container {
+    width: var(--desktop);
+  }
+}
 /*# sourceMappingURL=main.css.map */
