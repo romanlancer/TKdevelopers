@@ -1,33 +1,12 @@
-@charset "UTF-8";
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-:root {
-  --first-text-color: #ffffff;
-  --accent-and-text-color: #d41443;
-  --background-and-text-color: #ffa5ba;
-  --fourth-text-color: #000000;
-  --fifth-text-color: #907e82;
-  --accent-color: #2196f3;
-  --background-color: #ffffff;
-  --hero-and-footer-background-color: #2f303a;
-  --main-background-color: #e5e5e5;
-  --team-background-color: #f5f4fa;
-  --card-set-gap: 30px;
-}
-
 body,
 html {
   overflow-x: hidden;
 }
-
 body {
   font-family: 'DM Sans', sans-serif;
   letter-spacing: 0.04em;
   font-size: 16px;
 }
-
 *,
 ::before,
 ::after {
@@ -36,26 +15,21 @@ body {
   border: 0;
   outline: 0;
 }
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-
 li {
   list-style-type: none;
 }
-
 a {
   text-decoration: none;
 }
-
 a,
 button {
   cursor: pointer;
 }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -66,8 +40,6 @@ button {
   border: 0;
   clip: rect(0 0 0 0);
 }
-
 .container {
   margin: 0 auto;
 }
-/*# sourceMappingURL=main.css.map */
