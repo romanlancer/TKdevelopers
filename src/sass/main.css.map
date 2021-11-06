@@ -4,7 +4,8 @@
     "sources": [
         "main.scss",
         "utils/_variables.scss",
-        "utils/_base-reset.scss"
+        "utils/_base-reset.scss",
+        "components/_header-hero.scss"
     ],
     "names": [],
     "file": "main.css"
