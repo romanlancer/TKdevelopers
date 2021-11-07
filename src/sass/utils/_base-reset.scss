@@ -3,7 +3,7 @@ html {
 	overflow-x: hidden;
 }
 body {
-	font-family: "DM Sans", sans-serif;
+	font-family: 'DM Sans', sans-serif;
 	letter-spacing: 0.04em;
 	font-size: 16px;
 }
@@ -41,15 +41,13 @@ button {
 	clip: rect(0 0 0 0);
 }
 .container {
-	margin: 0 auto;
-
 	@media screen and (min-width: var(--mobile)) {
 		width: var(--mobile);
 	}
 	@media screen and (min-width: var(--tablet)) {
 		width: var(--tablet);
 	}
-	@media screen and (min-width: 1280px) {
+	@media screen and (min-width: var(--desktop)) {
 		width: var(--desktop);
 	}
 }

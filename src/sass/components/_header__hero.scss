@@ -1,0 +1,43 @@
+.header-hero {
+	background-color: var(--background-and-text-color);
+	height: 665px;
+	padding: 37px 0px 0px 43px;
+
+	&__nav {
+		display: flex;
+		align-items: center;
+	}
+
+	&__navigation-list {
+		display: flex;
+		margin: 0 110px;
+	}
+
+	&__navigation-item {
+		&:not(:last-child) {
+			margin-right: 50px;
+		}
+	}
+
+	&__navigation-link {
+		@include fonts(1.31, 700, 16px, unset, 0.04em, none);
+		color: var(--second-background-and-text-color);
+		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+		&:hover {
+			color: var(--accent-and-text-color);
+		}
+	}
+
+	&__button {
+		width: 159px;
+		height: 44px;
+		background-color: var(--second-background-and-text-color);
+		border-radius: 22px;
+		color: var(--accent-and-text-color);
+		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		&:hover {
+			background-color: var(--first-hover-color);
+		}
+	}
+}
