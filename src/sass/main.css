@@ -15,7 +15,7 @@
   --card-set-gap: 30px;
   --mobile: 320px;
   --tablet: 768px;
-  --desktop: 1200px;
+  --desktop: 1280px;
 }
 
 body,
@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   letter-spacing: 0.04em;
   font-size: 16px;
 }
@@ -84,9 +84,28 @@ button {
   }
 }
 
-@media screen and (min-width: var(--desktop)) {
+@media screen and (min-width: 1280px) {
   .container {
     width: var(--desktop);
   }
+}
+
+.header-hero__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-hero__navigation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-hero {
+  background-color: var(--background-and-text-color);
 }
 /*# sourceMappingURL=main.css.map */
