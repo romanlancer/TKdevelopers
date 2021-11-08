@@ -41,13 +41,14 @@ button {
 	clip: rect(0 0 0 0);
 }
 .container {
+	margin: 0 auto;
 	@media screen and (min-width: var(--mobile)) {
 		width: var(--mobile);
 	}
 	@media screen and (min-width: var(--tablet)) {
 		width: var(--tablet);
 	}
-	@media screen and (min-width: var(--desktop)) {
+	@media screen and (min-width: 1280px) {
 		width: var(--desktop);
 	}
 }

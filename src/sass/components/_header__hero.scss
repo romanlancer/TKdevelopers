@@ -1,7 +1,8 @@
 .header-hero {
 	background-color: var(--background-and-text-color);
 	height: 665px;
-	padding: 37px 0px 0px 43px;
+	padding: 37px 0px 0px 46px;
+	position: relative;
 
 	&__nav {
 		display: flex;
@@ -32,12 +33,121 @@
 	&__button {
 		width: 159px;
 		height: 44px;
-		background-color: var(--second-background-and-text-color);
 		border-radius: 22px;
+		@include fonts(1.31, 700, 16px, center, 0.04em, none);
+		background-color: var(--second-background-and-text-color);
 		color: var(--accent-and-text-color);
 		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		&:hover {
 			background-color: var(--first-hover-color);
 		}
+	}
+	&__title-container {
+		display: flex;
+		flex-direction: column;
+		margin-left: 69px;
+		margin-top: 84px;
+		display: inline-block;
+	}
+
+	&__title {
+		width: 277px;
+		font-family: 'Titan One';
+		display: flex;
+		flex-direction: column;
+
+		&-partial1 {
+			color: var(--second-background-and-text-color);
+			@include fonts(1.16, 400, 38px, unset, 0.04em, none);
+		}
+		&-partial2 {
+			color: var(--accent-and-text-color);
+			@include fonts(0.9, 400, 58px, unset, 0.04em, none);
+		}
+	}
+	&__title-buttons {
+		display: flex;
+		margin-top: 25px;
+	}
+	&__title-btn1 {
+		width: 104px;
+		height: 40px;
+		border-radius: 20px;
+		font-size: 14px;
+		margin-right: var(--title-and-button-gap);
+		background-color: var(--accent-and-text-color);
+		color: var(--second-background-and-text-color);
+		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		&:hover {
+			background-color: var(--second-hover-color);
+		}
+	}
+	&__title-btn2 {
+		width: 138px;
+		height: 40px;
+		border-radius: 20px;
+		font-size: 14px;
+		background-color: var(--second-background-and-text-color);
+		color: var(--accent-and-text-color);
+		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		&:hover {
+			background-color: var(--first-hover-color);
+		}
+	}
+}
+
+.company-abouts-1 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position: absolute;
+	top: 160px;
+	right: 138px;
+	&__circle {
+		position: absolute;
+		top: -5px;
+		right: -15px;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background-color: var(--second-background-and-text-color);
+	}
+	&__num {
+		font-family: 'Titan One';
+		z-index: 1;
+		color: var(--accent-and-text-color);
+		@include fonts(1.15, 400, 46px, unset, 0.04em, none);
+	}
+	&__text {
+		color: var(--second-background-and-text-color);
+		@include fonts(1.29, 400, 14px, unset, 0.04em, none);
+	}
+}
+.company-abouts-2 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position: absolute;
+	top: 248px;
+	right: 138px;
+	&__circle {
+		position: absolute;
+		top: -5px;
+		right: -15px;
+
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background-color: var(--second-background-and-text-color);
+	}
+	&__num {
+		font-family: 'Titan One';
+		z-index: 1;
+		color: var(--accent-and-text-color);
+		@include fonts(1.15, 400, 46px, unset, 0.04em, none);
+	}
+	&__text {
+		color: var(--second-background-and-text-color);
+		@include fonts(1.29, 400, 14px, unset, 0.04em, none);
 	}
 }
