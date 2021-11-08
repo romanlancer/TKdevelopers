@@ -1,8 +1,11 @@
+.main-nav {
+	position: relative;
+	height: 665px;
+	padding: 37px 0px 0px 20px;
+}
+
 .header-hero {
 	background-color: var(--background-and-text-color);
-	height: 665px;
-	padding: 37px 0px 0px 46px;
-	position: relative;
 
 	&__nav {
 		display: flex;
@@ -15,12 +18,14 @@
 	}
 
 	&__navigation-item {
+		z-index: 1;
 		&:not(:last-child) {
 			margin-right: 50px;
 		}
 	}
 
 	&__navigation-link {
+		padding: 15px 0px;
 		@include fonts(1.31, 700, 16px, unset, 0.04em, none);
 		color: var(--second-background-and-text-color);
 		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -45,9 +50,9 @@
 	&__title-container {
 		display: flex;
 		flex-direction: column;
-		margin-left: 69px;
+		position: relative;
+		left: 69px;
 		margin-top: 84px;
-		display: inline-block;
 	}
 
 	&__title {
@@ -94,6 +99,29 @@
 			background-color: var(--first-hover-color);
 		}
 	}
+
+	&__advertisement {
+		position: relative;
+		left: 245px;
+		margin-top: 112px;
+		width: 200px;
+		height: 78px;
+		&-text {
+			@include fonts(1.43, 400, 14px, unset, 0.04em, none);
+			color: var(--second-background-and-text-color);
+			margin-bottom: 20px;
+		}
+	}
+
+	&__circle {
+		width: 538px;
+		height: 538px;
+		border-radius: 50%;
+		background-color: var(--first-text-color);
+		position: absolute;
+		top: 10px;
+		left: 500px;
+	}
 }
 
 .company-abouts-1 {
@@ -101,8 +129,8 @@
 	flex-direction: column;
 	align-items: flex-end;
 	position: absolute;
-	top: 160px;
-	right: 138px;
+	top: 130px;
+	right: 70px;
 	&__circle {
 		position: absolute;
 		top: -5px;
@@ -128,8 +156,8 @@
 	flex-direction: column;
 	align-items: flex-end;
 	position: absolute;
-	top: 248px;
-	right: 138px;
+	top: 218px;
+	right: 70px;
 	&__circle {
 		position: absolute;
 		top: -5px;
@@ -150,4 +178,20 @@
 		color: var(--second-background-and-text-color);
 		@include fonts(1.29, 400, 14px, unset, 0.04em, none);
 	}
+}
+
+.milk-pic {
+	position: absolute;
+	bottom: 45px;
+	left: 50px;
+}
+.ice-cream-pic {
+	position: absolute;
+	bottom: 0px;
+	left: 620px;
+}
+.girl-pic {
+	position: absolute;
+	bottom: 0px;
+	right: 100px;
 }
