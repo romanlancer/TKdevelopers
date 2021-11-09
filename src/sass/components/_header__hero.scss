@@ -47,6 +47,11 @@
 			background-color: var(--first-hover-color);
 		}
 	}
+
+	&__burger {
+		background-color: var(--background-and-text-color);
+	}
+
 	&__title-container {
 		display: flex;
 		flex-direction: column;
