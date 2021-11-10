@@ -1,0 +1,32 @@
+.about {
+	padding-top: 125px;
+	background-color: #fff5f6;
+	display: flex;
+
+	&__text {
+		padding-bottom: 26px;
+	}
+
+	&__description {
+		font-family: 'Titan One';
+		@include fonts(1.16, 400, 18px, center, 0.04em, uppercase);
+		color: var(--first-text-color);
+		margin-bottom: 15px;
+
+		@media screen and (min-width: $desktop) {
+			line-height: 1.13;
+			font-size: 30px;
+		}
+	}
+	&__title {
+		font-family: 'Titan One';
+		@include fonts(1.14, 400, 34px, center, 0.04em, uppercase);
+		color: var(--accent-and-text-color);
+
+		@media screen and (min-width: $desktop) {
+			line-height: 1.13;
+			font-size: 58px;
+			letter-spacing: 0.06em;
+		}
+	}
+}
