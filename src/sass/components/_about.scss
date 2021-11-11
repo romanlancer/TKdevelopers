@@ -3,13 +3,16 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	position: relative;
 }
 
 .about {
 	padding-top: 125px;
 	background-color: #fff5f6;
 	display: flex;
+	background-image: url(../images/about/aboutbg-m.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50% 96%;
 
 	&__text {
 		padding-bottom: 26px;
@@ -88,8 +91,9 @@
 	}
 }
 
-.aboutbg {
-	position: absolute;
-	bottom: 35px;
-	min-width: 320px;
-}
+// .aboutbg {
+// 	position: absolute;
+// 	bottom: 35px;
+// 	min-width: 320px;
+// 	background-size: cover;
+// }
