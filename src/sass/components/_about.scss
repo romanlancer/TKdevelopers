@@ -1,10 +1,22 @@
+.container-about {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .about {
 	padding-top: 125px;
 	background-color: #fff5f6;
 	display: flex;
+	background-image: url(../images/about/aboutbg-m.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50% 96%;
 
 	&__text {
 		padding-bottom: 26px;
+		width: 211px;
 	}
 
 	&__description {
@@ -29,4 +41,59 @@
 			letter-spacing: 0.06em;
 		}
 	}
+
+	&__btn {
+		color: var(--accent-and-text-color);
+		fill: var(--second-background-and-text-color);
+		stroke: var(--accent-and-text-color);
+		@include fonts(1.28, 700, 14px, center, 0.04em, none);
+		display: flex;
+		align-items: center;
+		margin-top: 17px;
+		background: var(--second-background-and-text-color);
+		border-radius: 22px;
+		padding: 16px 38px;
+		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+			color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+			box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+			top 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	&__btn:hover,
+	&__btn:focus {
+		top: 1px;
+		background-color: var(--second-hover-color);
+		color: var(--second-background-and-text-color);
+		fill: var(--accent-and-text-color);
+		stroke: var(--second-background-and-text-color);
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	}
+
+	&__icon {
+		color: var(--accent-and-text-color);
+		margin-left: 15px;
+	}
 }
+
+.description-about {
+	width: 235px;
+
+	&_black {
+		margin-top: 46px;
+		@include fonts(1.62, 500, 12px, left, 0.04em, none);
+		color: var(--second-text-color);
+	}
+
+	&_white {
+		margin-top: 46px;
+		@include fonts(1.62, 500, 12px, left, 0.04em, none);
+		color: var(--third-text-color);
+	}
+}
+
+// .aboutbg {
+// 	position: absolute;
+// 	bottom: 35px;
+// 	min-width: 320px;
+// 	background-size: cover;
+// }
