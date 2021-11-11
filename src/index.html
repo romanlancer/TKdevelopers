@@ -17,6 +17,12 @@
 			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+		/>
+
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	</head>
 	<body>
 		<!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
@@ -38,6 +44,11 @@
 		></script>
 		<script defer src="js/mobile-menu.js"></script>
 		<script src="./js/modal.js"></script>
+		<script type="module">
+			import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+
+			const swiper = new Swiper(...)
+		</script>
 		<script src="./index.js"></script>
 	</body>
 </html>
