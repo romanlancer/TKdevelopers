@@ -1,18 +1,50 @@
 <section class="about" id="#Advantages">
-	<div class="container">
+	<div class="container-about">
 		<div class="about__text">
-			<h2 class="about__description">tradition and love</h2>
-			<p class="about__title">how it’s made?</p>
+			<p class="about__description">tradition and love</p>
+			<h2 class="about__title">how it’s made?</h2>
 		</div>
 		<picture>
 			<source
 				srcset="
-					./images/about/about__cow.png     1x,
-					./images/about/about__cow__2x.png 2x
+					./images/about/about__cow-m.png     1x,
+					./images/about/about__cow__2x-m.png 2x
 				"
 				media="(max-width: 767px)"
 			/>
-			<img src="./images/about/about__cow.png" alt="How it’s made?" />
+			<img src="./images/about/about__cow-m.png" alt="How it’s made?" />
+		</picture>
+		<div class="description-about">
+			<div class="container">
+				<p class="description-about_black">
+					Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+					cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+					justo fringilla.
+				</p>
+				<p class="description-about_white">
+					Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+					Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+					suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+					tincidunt. Aliquam erat volutpat. Aenean accumsan.
+				</p>
+				<button class="about__btn" href="#">
+					Read more
+					<svg class="about__icon" width="8" height="10">
+						<use href="./images/about/symbol-defs.svg#aboutbtn"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+
+		<picture class="aboutbg">
+			<source
+				srcset="
+					./images/about/aboutbg-m.png     1x,
+					./images/about/aboutbg__2x-m.png 2x
+				"
+				media="(max-width: 767px)"
+			/>
+			<img src="./images/about/aboutbg-m.png" alt="Milk" />
 		</picture>
 	</div>
 </section>
