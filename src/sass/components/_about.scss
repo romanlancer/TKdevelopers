@@ -136,12 +136,6 @@
 			align-items: flex-start;
 		}
 	}
-
-	&__img {
-		@media screen and (min-width: $desktop) {
-			width: 516px;
-		}
-	}
 }
 
 .description-about {
