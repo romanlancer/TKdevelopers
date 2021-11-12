@@ -3,24 +3,32 @@
 	padding-bottom: 36px;
 }
 .swiper {
-	width: 280px;
-	max-height: 100%;
+	max-width: 280px;
+	@media screen and (min-width: 480px) {
+		max-width: 440px;
+	}
+	@media screen and (min-width: 768px) {
+		max-width: 620px;
+	}
+	@media screen and (min-width: 1280px) {
+		max-width: 928px;
+	}
 }
-.swiper-image {
+.reviews-user {
 	margin-bottom: 16px;
 	margin-left: auto;
 	margin-right: auto;
 }
-.swiper-wraper {
+.reviews-wrapper {
 	width: 100%;
 	padding-top: 44px;
 	padding-left: 50px;
 	padding-bottom: 20px;
 	padding-right: 50px;
-	margin-bottom: 16px;
+	margin-bottom: 30px;
 	background-color: #fafafa;
 }
-.swiper-gradient {
+.reviews-gradient {
 	background: repeating-linear-gradient(
 		to bottom,
 		#fafafa 0px,
@@ -33,7 +41,7 @@
 	// font-size: 16px;
 	// line-height: 1.86;
 }
-.swiper-text {
+.reviews-text {
 	position: relative;
 	font-weight: 500;
 	font-size: 12px;
@@ -42,26 +50,43 @@
 	padding-left: 8px;
 	padding-right: 16px;
 	color: #000000;
+	@media screen and (min-width: 768px) {
+		font-size: 14px;
+		line-height: 2.16;
+	}
+	@media screen and (min-width: 1280px) {
+		font-size: 16px;
+		line-height: 1.86;
+	}
 }
-.swiper-decorhook {
+.reviews-decorhook {
 	background: transparent;
 	position: absolute;
 	top: -12px;
 	left: 4px;
 }
+.reviews-decordots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 16px;
+}
 .reviews-dots {
 	display: block;
 	height: 4px;
 	width: 4px;
+	border-radius: 50%;
 	background-color: #c7133e;
-	margin-left: auto;
-	margin-right: auto;
+	&:not(:last-child) {
+		margin-right: 10px;
+	}
 }
-.swiper-location {
+.reviews-location {
 	display: block;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.86;
 	text-align: center;
 	color: #000000;
+	padding-bottom: 50px;
 }
