@@ -1,28 +1,18 @@
 .gallery-section {
+	position: relative;
 	display: flex;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: linear-gradient(
-		to bottom,
-		var(--background-and-text-color) 30%,
-		var(--second-background-and-text-color) 30%
-	);
+	justify-content: center;
+	width: 100%;
+	margin-top: 139px;
+	margin-bottom: 124px;
+	background-image: linear-gradient(to bottom, #fff5f6 30%, #ffffff 30%);
 }
-// @media screen and (min-width: $mobile) {
-// 	padding-top: 97px;
-// 	padding-bottom: 80px;
-// }
-
-// @media screen and (min-width: $tablet) {
-// 	padding-top: 140px;
-// 	padding-bottom: 121px;
-// }
-
-// @media screen and (min-width: $desktop) {
-// 	padding-top: 139px;
-// 	padding-bottom: 123px;
-// }
 
 .thumb {
-	position: relative;
+	width: 140px;
+	padding: 5px;
+}
+
+.thumb-big {
+	width: 280px;
 }
