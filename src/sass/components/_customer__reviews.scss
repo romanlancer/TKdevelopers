@@ -4,7 +4,7 @@
 }
 .swiper {
 	width: 280px;
-	height: 400px;
+	max-height: 100%;
 }
 .swiper-image {
 	margin-bottom: 16px;
@@ -19,16 +19,19 @@
 	padding-right: 50px;
 	margin-bottom: 16px;
 	background-color: #fafafa;
-	&::before {
-		content: '\275E';
-		font-size: 100px;
-		position: absolute;
-		top: 120px;
-		left: 52px;
-		color: #e1e1e1;
-		background: transparent;
-		z-index: 1;
-	}
+}
+.swiper-gradient {
+	background: repeating-linear-gradient(
+		to bottom,
+		#fafafa 0px,
+		#fafafa 29px,
+		#e1e1e1 29px,
+		#e1e1e1 30px
+	);
+	position: relative;
+	// font-weight: 500;
+	// font-size: 16px;
+	// line-height: 1.86;
 }
 .swiper-text {
 	position: relative;
@@ -38,16 +41,27 @@
 	text-align: center;
 	padding-left: 8px;
 	padding-right: 16px;
-	// font-weight: 500;
-	// font-size: 16px;
-	// line-height: 1.86;
+	color: #000000;
+}
+.swiper-decorhook {
+	background: transparent;
+	position: absolute;
+	top: -12px;
+	left: 4px;
+}
+.reviews-dots {
+	display: block;
+	height: 4px;
+	width: 4px;
+	background-color: #c7133e;
+	margin-left: auto;
+	margin-right: auto;
+}
+.swiper-location {
+	display: block;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.86;
 	text-align: center;
 	color: #000000;
-	background: repeating-linear-gradient(
-		to bottom,
-		#fafafa 0px,
-		#fafafa 29px,
-		#e1e1e1 29px,
-		#e1e1e1 30px
-	);
 }
