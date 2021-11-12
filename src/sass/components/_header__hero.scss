@@ -1,202 +1,202 @@
-// .header-hero__container {
-// 	position: relative;
-// 	height: 665px;
-// 	padding: 37px 20px 0px 20px;
-// }
+.header-hero__container {
+	position: relative;
+	height: 665px;
+	padding: 37px 20px 0px 20px;
+}
 
-// .header-hero {
-// 	background-color: var(--background-and-text-color);
+.header-hero {
+	background-color: var(--background-and-text-color);
 
-// 	&__nav {
-// 		display: flex;
-// 		align-items: center;
-// 	}
+	&__nav {
+		display: flex;
+		align-items: center;
+	}
 
-// 	&__navigation-list {
-// 		display: flex;
-// 		margin: 0 110px;
-// 	}
+	&__navigation-list {
+		display: flex;
+		margin: 0 110px;
+	}
 
-// 	&__navigation-item {
-// 		z-index: 1;
-// 		&:not(:last-child) {
-// 			margin-right: 50px;
-// 		}
-// 	}
+	&__navigation-item {
+		z-index: 1;
+		&:not(:last-child) {
+			margin-right: 50px;
+		}
+	}
 
-// 	&__navigation-link {
-// 		padding: 15px 0px;
-// 		@include fonts(1.31, 700, 16px, unset, 0.04em, none);
-// 		color: var(--second-background-and-text-color);
-// 		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	&__navigation-link {
+		padding: 15px 0px;
+		@include fonts(1.31, 700, 16px, unset, 0.04em, none);
+		color: var(--second-background-and-text-color);
+		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-// 		&:hover {
-// 			color: var(--accent-and-text-color);
-// 		}
-// 	}
+		&:hover {
+			color: var(--accent-and-text-color);
+		}
+	}
 
-// 	&__button {
-// 		width: 159px;
-// 		height: 44px;
-// 		border-radius: 22px;
-// 		@include fonts(1.31, 700, 16px, center, 0.04em, none);
-// 		background-color: var(--second-background-and-text-color);
-// 		color: var(--accent-and-text-color);
-// 		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// 		&:hover {
-// 			background-color: var(--first-hover-color);
-// 		}
-// 	}
+	&__button {
+		width: 159px;
+		height: 44px;
+		border-radius: 22px;
+		@include fonts(1.31, 700, 16px, center, 0.04em, none);
+		background-color: var(--second-background-and-text-color);
+		color: var(--accent-and-text-color);
+		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		&:hover {
+			background-color: var(--first-hover-color);
+		}
+	}
 
-// 	&__burger {
-// 		background-color: var(--background-and-text-color);
-// 	}
+	&__burger {
+		background-color: var(--background-and-text-color);
+	}
 
-// 	&__title-container {
-// 		display: flex;
-// 		flex-direction: column;
-// 		position: relative;
-// 		left: 69px;
-// 		margin-top: 84px;
-// 	}
+	&__title-container {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		left: 69px;
+		margin-top: 84px;
+	}
 
-// 	&__title {
-// 		width: 277px;
-// 		font-family: 'Titan One';
-// 		display: flex;
-// 		flex-direction: column;
+	&__title {
+		width: 277px;
+		font-family: 'Titan One';
+		display: flex;
+		flex-direction: column;
 
-// 		&-partial1 {
-// 			color: var(--second-background-and-text-color);
-// 			@include fonts(1.16, 400, 38px, unset, 0.04em, none);
-// 		}
-// 		&-partial2 {
-// 			color: var(--accent-and-text-color);
-// 			@include fonts(0.9, 400, 58px, unset, 0.04em, none);
-// 		}
-// 	}
-// 	&__title-buttons {
-// 		display: flex;
-// 		margin-top: 25px;
-// 	}
-// 	&__title-btn1 {
-// 		width: 104px;
-// 		height: 40px;
-// 		border-radius: 20px;
-// 		font-size: 14px;
-// 		margin-right: var(--title-and-button-gap);
-// 		background-color: var(--accent-and-text-color);
-// 		color: var(--second-background-and-text-color);
-// 		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// 		&:hover {
-// 			background-color: var(--second-hover-color);
-// 		}
-// 	}
-// 	&__title-btn2 {
-// 		width: 138px;
-// 		height: 40px;
-// 		border-radius: 20px;
-// 		font-size: 14px;
-// 		background-color: var(--second-background-and-text-color);
-// 		color: var(--accent-and-text-color);
-// 		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// 		&:hover {
-// 			background-color: var(--first-hover-color);
-// 		}
-// 	}
+		&-partial1 {
+			color: var(--second-background-and-text-color);
+			@include fonts(1.16, 400, 38px, unset, 0.04em, none);
+		}
+		&-partial2 {
+			color: var(--accent-and-text-color);
+			@include fonts(0.9, 400, 58px, unset, 0.04em, none);
+		}
+	}
+	&__title-buttons {
+		display: flex;
+		margin-top: 25px;
+	}
+	&__title-btn1 {
+		width: 104px;
+		height: 40px;
+		border-radius: 20px;
+		font-size: 14px;
+		margin-right: var(--title-and-button-gap);
+		background-color: var(--accent-and-text-color);
+		color: var(--second-background-and-text-color);
+		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		&:hover {
+			background-color: var(--second-hover-color);
+		}
+	}
+	&__title-btn2 {
+		width: 138px;
+		height: 40px;
+		border-radius: 20px;
+		font-size: 14px;
+		background-color: var(--second-background-and-text-color);
+		color: var(--accent-and-text-color);
+		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		&:hover {
+			background-color: var(--first-hover-color);
+		}
+	}
 
-// 	&__advertisement {
-// 		position: relative;
-// 		left: 245px;
-// 		margin-top: 112px;
-// 		width: 200px;
-// 		height: 78px;
-// 		&-text {
-// 			@include fonts(1.43, 400, 14px, unset, 0.04em, none);
-// 			color: var(--second-background-and-text-color);
-// 			margin-bottom: 20px;
-// 		}
-// 	}
+	&__advertisement {
+		position: relative;
+		left: 245px;
+		margin-top: 112px;
+		width: 200px;
+		height: 78px;
+		&-text {
+			@include fonts(1.43, 400, 14px, unset, 0.04em, none);
+			color: var(--second-background-and-text-color);
+			margin-bottom: 20px;
+		}
+	}
 
-// 	&__circle {
-// 		width: 538px;
-// 		height: 538px;
-// 		border-radius: 50%;
-// 		background-color: var(--first-text-color);
-// 		position: absolute;
-// 		top: 10px;
-// 		left: 500px;
-// 	}
-// }
+	&__circle {
+		width: 538px;
+		height: 538px;
+		border-radius: 50%;
+		background-color: var(--first-text-color);
+		position: absolute;
+		top: 10px;
+		left: 500px;
+	}
+}
 
-// .company-abouts-1 {
-// 	display: flex;
-// 	flex-direction: column;
-// 	align-items: flex-end;
-// 	position: absolute;
-// 	top: 130px;
-// 	right: 70px;
-// 	&__circle {
-// 		position: absolute;
-// 		top: -5px;
-// 		right: -15px;
-// 		width: 30px;
-// 		height: 30px;
-// 		border-radius: 50%;
-// 		background-color: var(--second-background-and-text-color);
-// 	}
-// 	&__num {
-// 		font-family: 'Titan One';
-// 		z-index: 1;
-// 		color: var(--accent-and-text-color);
-// 		@include fonts(1.15, 400, 46px, unset, 0.04em, none);
-// 	}
-// 	&__text {
-// 		color: var(--second-background-and-text-color);
-// 		@include fonts(1.29, 400, 14px, unset, 0.04em, none);
-// 	}
-// }
-// .company-abouts-2 {
-// 	display: flex;
-// 	flex-direction: column;
-// 	align-items: flex-end;
-// 	position: absolute;
-// 	top: 218px;
-// 	right: 70px;
-// 	&__circle {
-// 		position: absolute;
-// 		top: -5px;
-// 		right: -15px;
+.company-abouts-1 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position: absolute;
+	top: 130px;
+	right: 70px;
+	&__circle {
+		position: absolute;
+		top: -5px;
+		right: -15px;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background-color: var(--second-background-and-text-color);
+	}
+	&__num {
+		font-family: 'Titan One';
+		z-index: 1;
+		color: var(--accent-and-text-color);
+		@include fonts(1.15, 400, 46px, unset, 0.04em, none);
+	}
+	&__text {
+		color: var(--second-background-and-text-color);
+		@include fonts(1.29, 400, 14px, unset, 0.04em, none);
+	}
+}
+.company-abouts-2 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position: absolute;
+	top: 218px;
+	right: 70px;
+	&__circle {
+		position: absolute;
+		top: -5px;
+		right: -15px;
 
-// 		width: 30px;
-// 		height: 30px;
-// 		border-radius: 50%;
-// 		background-color: var(--second-background-and-text-color);
-// 	}
-// 	&__num {
-// 		font-family: 'Titan One';
-// 		z-index: 1;
-// 		color: var(--accent-and-text-color);
-// 		@include fonts(1.15, 400, 46px, unset, 0.04em, none);
-// 	}
-// 	&__text {
-// 		color: var(--second-background-and-text-color);
-// 		@include fonts(1.29, 400, 14px, unset, 0.04em, none);
-// 	}
-// }
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background-color: var(--second-background-and-text-color);
+	}
+	&__num {
+		font-family: 'Titan One';
+		z-index: 1;
+		color: var(--accent-and-text-color);
+		@include fonts(1.15, 400, 46px, unset, 0.04em, none);
+	}
+	&__text {
+		color: var(--second-background-and-text-color);
+		@include fonts(1.29, 400, 14px, unset, 0.04em, none);
+	}
+}
 
-// .milk-pic {
-// 	position: absolute;
-// 	bottom: 45px;
-// 	left: 50px;
-// }
-// .ice-cream-pic {
-// 	position: absolute;
-// 	bottom: 0px;
-// 	left: 620px;
-// }
-// .girl-pic {
-// 	position: absolute;
-// 	bottom: 0px;
-// 	right: 100px;
-// }
+.milk-pic {
+	position: absolute;
+	bottom: 45px;
+	left: 50px;
+}
+.ice-cream-pic {
+	position: absolute;
+	bottom: 0px;
+	left: 620px;
+}
+.girl-pic {
+	position: absolute;
+	bottom: 0px;
+	right: 100px;
+}
