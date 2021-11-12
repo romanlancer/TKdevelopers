@@ -4,7 +4,7 @@
 }
 .swiper {
 	width: 280px;
-	height: auto;
+	height: 400px;
 }
 .swiper-image {
 	margin-bottom: 16px;
@@ -19,6 +19,16 @@
 	padding-right: 50px;
 	margin-bottom: 16px;
 	background-color: #fafafa;
+	&::before {
+		content: '\275E';
+		font-size: 100px;
+		position: absolute;
+		top: 120px;
+		left: 52px;
+		color: #e1e1e1;
+		background: transparent;
+		z-index: 1;
+	}
 }
 .swiper-text {
 	position: relative;
@@ -33,21 +43,11 @@
 	// line-height: 1.86;
 	text-align: center;
 	color: #000000;
-	background-image: repeating-linear-gradient(
+	background: repeating-linear-gradient(
 		to bottom,
 		#fafafa 0px,
 		#fafafa 29px,
 		#e1e1e1 29px,
 		#e1e1e1 30px
 	);
-	&::before {
-		content: '\275E';
-		font-size: 100px;
-		position: absolute;
-		top: 120px;
-		left: 52px;
-		color: #e1e1e1;
-		background: transparent;
-		z-index: 1;
-	}
 }
