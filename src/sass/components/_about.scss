@@ -11,6 +11,10 @@
 	@media screen and (min-width: $tablet) {
 		width: 768px;
 	}
+
+	@media screen and (min-width: $desktop) {
+		min-width: 1200px;
+	}
 }
 
 .about {
@@ -28,7 +32,7 @@
 
 	@media screen and (min-width: $desktop) {
 		background-image: url(../images/about/aboutbg-d.png);
-		background-position: 50% 205%;
+		background-position: 50% 118%;
 	}
 
 	&__text {
@@ -125,9 +129,17 @@
 		display: flex;
 		align-items: center;
 		flex-direction: column;
+		justify-content: center;
+
 		@media screen and (min-width: $tablet) {
 			flex-direction: row;
 			align-items: flex-start;
+		}
+	}
+
+	&__img {
+		@media screen and (min-width: $desktop) {
+			width: 516px;
 		}
 	}
 }
@@ -145,6 +157,7 @@
 
 	@media screen and (min-width: $desktop) {
 		margin-left: 75px;
+		width: 450px;
 	}
 
 	&_black {
