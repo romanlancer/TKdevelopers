@@ -3,10 +3,22 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	@media screen and (min-width: $mobile) {
+		width: 330px;
+	}
+
+	@media screen and (min-width: $tablet) {
+		width: 768px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		min-width: 1200px;
+	}
 }
 
 .about {
-	padding-top: 125px;
+	padding-top: 130px;
 	background-color: #fff5f6;
 	display: flex;
 	background-image: url(../images/about/aboutbg-m.png);
@@ -14,9 +26,30 @@
 	background-size: contain;
 	background-position: 50% 96%;
 
+	@media screen and (min-width: $tablet) {
+		background-image: none;
+	}
+
+	@media screen and (min-width: $desktop) {
+		background-image: url(../images/about/aboutbg-d.png);
+		background-position: 50% 118%;
+	}
+
 	&__text {
 		padding-bottom: 26px;
 		width: 211px;
+
+		@media screen and (min-width: $mobile) {
+			width: 310px;
+		}
+
+		@media screen and (min-width: $tablet) {
+			width: 431px;
+		}
+
+		@media screen and (min-width: $desktop) {
+			width: 537px;
+		}
 	}
 
 	&__description {
@@ -24,6 +57,11 @@
 		@include fonts(1.16, 400, 18px, center, 0.04em, uppercase);
 		color: var(--first-text-color);
 		margin-bottom: 15px;
+
+		@media screen and (min-width: $tablet) {
+			line-height: 1.15;
+			font-size: 26px;
+		}
 
 		@media screen and (min-width: $desktop) {
 			line-height: 1.13;
@@ -35,6 +73,11 @@
 		@include fonts(1.14, 400, 34px, center, 0.04em, uppercase);
 		color: var(--accent-and-text-color);
 
+		@media screen and (min-width: $tablet) {
+			line-height: 1.14;
+			font-size: 48px;
+		}
+
 		@media screen and (min-width: $desktop) {
 			line-height: 1.13;
 			font-size: 58px;
@@ -43,6 +86,7 @@
 	}
 
 	&__btn {
+		position: relative;
 		color: var(--accent-and-text-color);
 		fill: var(--second-background-and-text-color);
 		stroke: var(--accent-and-text-color);
@@ -57,43 +101,98 @@
 			color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 			box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
 			top 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+		@media screen and (min-width: $tablet) {
+			margin-top: 62px;
+		}
+
+		@media screen and (min-width: $desktop) {
+			margin-top: 45px;
+		}
 	}
 
 	&__btn:hover,
 	&__btn:focus {
-		top: 1px;
-		background-color: var(--second-hover-color);
-		color: var(--second-background-and-text-color);
-		fill: var(--accent-and-text-color);
-		stroke: var(--second-background-and-text-color);
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		top: 2px;
+		background-color: var(--first-hover-color);
+		color: var(--accent-and-text-color);
+		fill: var(--second-background-and-text-color);
+		stroke: var(--accent-and-text-color);
+		box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+			0px 2px 2px rgba(0, 0, 0, 0.12);
+	}
+
+	&__btn:active {
+		box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.1),
+			inset 0px 1px 2px rgba(0, 0, 0, 0.08),
+			inset 0px 2px 2px rgba(0, 0, 0, 0.12);
 	}
 
 	&__icon {
 		color: var(--accent-and-text-color);
 		margin-left: 15px;
 	}
+
+	&__wraper-tablet {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+
+		@media screen and (min-width: $tablet) {
+			flex-direction: row;
+			align-items: flex-start;
+		}
+	}
 }
 
 .description-about {
 	width: 235px;
 
+	@media screen and (min-width: $mobile) {
+		width: 308px;
+	}
+
+	@media screen and (min-width: $tablet) {
+		margin-left: 17px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		margin-left: 75px;
+		width: 450px;
+	}
+
 	&_black {
 		margin-top: 46px;
 		@include fonts(1.62, 500, 12px, left, 0.04em, none);
 		color: var(--second-text-color);
+
+		@media screen and (min-width: $mobile) {
+			width: 308px;
+			line-height: 1.76;
+			font-size: 14px;
+		}
+
+		@media screen and (min-width: $desktop) {
+			width: 450px;
+			font-size: 16px;
+		}
 	}
 
 	&_white {
-		margin-top: 46px;
+		margin-top: 30px;
 		@include fonts(1.62, 500, 12px, left, 0.04em, none);
 		color: var(--third-text-color);
+
+		@media screen and (min-width: $mobile) {
+			width: 308px;
+			line-height: 1.76;
+			font-size: 14px;
+		}
+
+		@media screen and (min-width: $desktop) {
+			width: 450px;
+			line-height: 1.94;
+		}
 	}
 }
-
-// .aboutbg {
-// 	position: absolute;
-// 	bottom: 35px;
-// 	min-width: 320px;
-// 	background-size: cover;
-// }
