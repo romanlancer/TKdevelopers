@@ -26,6 +26,13 @@ li {
 a {
 	text-decoration: none;
 }
+
+select {
+	display: block;
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
 a,
 button {
 	cursor: pointer;
