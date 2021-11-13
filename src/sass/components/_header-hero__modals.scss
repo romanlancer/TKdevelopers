@@ -412,6 +412,10 @@ input[type='radio'] {
 			width: 30px;
 		}
 
+		@media screen and (min-width: 420px) {
+			width: 27px;
+		}
+
 		@media screen and (min-width: $mobile) {
 			width: 23px;
 		}
