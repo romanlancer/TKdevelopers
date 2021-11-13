@@ -31,7 +31,6 @@
 }
 
 .thumb-big {
-	position: relative;
 	width: 280px;
 	margin-left: 5px;
 
@@ -46,4 +45,8 @@
 .thumb-under {
 	margin-left: 5px;
 	transform: translateY(-75px);
+}
+
+img:hover {
+	transform: scale(110%);
 }
