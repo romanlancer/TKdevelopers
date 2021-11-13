@@ -1,0 +1,121 @@
+.modals-locations {
+	&__backdrop {
+		position: fixed;
+		top: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: rgba(212, 19, 66, 0.6);
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&.is-hidden {
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
+		}
+	}
+
+	&__modal {
+		position: relative;
+
+		width: 480px;
+		max-width: 100%;
+		min-height: 100%;
+		padding: 20px;
+
+		background-color: var(--second-background-and-text-color);
+
+		@media screen and (min-width: $mobile) {
+			width: 450px;
+			min-height: 600px;
+			border-radius: 16px;
+			padding: 40px;
+		}
+	}
+
+	&__btn-close {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+
+		width: 30px;
+		height: 30px;
+
+		background-color: var(--second-background-and-text-color);
+		display: flex;
+		border: 1px solid #f8bebe;
+		border-radius: 50%;
+
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__btn-close_icon {
+		width: 12px;
+		height: 12px;
+		fill: #444444;
+
+		transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+		& {
+			.modals-locations__btn-close:hover &,
+			.modals-locations__btn-close:focus & {
+				fill: var(--accent-and-text-color);
+			}
+		}
+	}
+
+	&__title {
+		display: block;
+		font-family: Titan One;
+		font-weight: 400;
+		font-size: 36px;
+		line-height: calc(41 / 36);
+		text-transform: uppercase;
+		color: var(--accent-and-text-color);
+
+		margin-bottom: 50px;
+	}
+
+	&__address {
+		font-style: normal;
+	}
+
+	&__address-pretitle {
+		display: block;
+		font-family: Titan One;
+		font-weight: 400;
+		font-size: 28px;
+		line-height: calc(32 / 28);
+		text-transform: uppercase;
+		color: var(--accent-and-text-color);
+
+		margin-bottom: 15px;
+	}
+
+	&__address-text {
+		display: block;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.4;
+		color: var(--second-text-color);
+	}
+
+	&__contacts-link {
+		display: block;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.4;
+		color: var(--second-text-color);
+	}
+
+	&__map iframe {
+		bottom: 40px;
+		left: 40px;
+		height: 290px;
+		width: 370px;
+		position: absolute;
+	}
+}
