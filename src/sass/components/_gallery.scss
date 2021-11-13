@@ -3,24 +3,47 @@
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	margin-top: 139px;
-	margin-bottom: 124px;
-	background-image: linear-gradient(to bottom, #fff5f6 30%, #ffffff 30%);
+	padding-top: 139px;
+	background-color: #fff5f6;
 }
 
 .thumb {
 	width: 140px;
-	margin: 7px;
+	margin-left: 5px;
+	border-radius: 20px;
+	overflow: hidden;
 }
 
-.with-after::after {
-	display: inline-block;
-	content: '';
-	width: 320px;
-	height: 100%;
+.first-elem {
+	margin-top: 40px;
+}
+
+.last-elem {
+	margin-top: 40px;
+}
+
+.mb {
+	margin-bottom: 5px;
+}
+
+.up-block {
+	transform: translateY(-50px);
 }
 
 .thumb-big {
-	position: absolute;
+	position: relative;
 	width: 280px;
+	margin-left: 5px;
+
+	transform: translateY(-30%);
+}
+
+.big-small-block {
+	display: flex;
+	flex-direction: column;
+}
+
+.thumb-under {
+	margin-left: 5px;
+	transform: translateY(-75px);
 }
