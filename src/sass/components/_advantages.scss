@@ -22,12 +22,30 @@
 		width: 230px;
 		margin-right: auto;
 		&:not(:last-child) {
-			margin-bottom: 40px;
+			margin: 0 0 40px 0;
+		}
+		@media screen and (min-width: $tablet) {
+			width: 180px;
+			&:not(:last-child) {
+				margin: 0 60px 0 0;
+			}
+		}
+		@media screen and (min-width: $desktop) {
+			flex-basis: calc((100% - 60px) / 3);
+			&:not(:last-child) {
+				margin: 0 30px 0 0;
+			}
 		}
 	}
 
 	&__icon_container {
 		margin-bottom: 15px;
+		@media screen and (min-width: $tablet) {
+			margin-bottom: 35px;
+		}
+		@media screen and (min-width: $desktop) {
+			margin-bottom: 40px;
+		}
 	}
 
 	&__icon {
@@ -44,13 +62,31 @@
 		color: var(--accent-and-text-color);
 
 		margin-bottom: 15px;
+
+		@media screen and (min-width: $tablet) {
+			font-size: 48px;
+			line-height: calc(55 / 48);
+		}
+		@media screen and (min-width: $desktop) {
+			font-size: 58px;
+			line-height: calc(66 / 58);
+		}
 	}
 
 	&__text {
 		font-weight: 700;
 		font-size: 12px;
 		line-height: 1.7;
-		letter-spacing: 0em;
+		letter-spacing: 0.02em;
 		color: var(--second-text-color);
+
+		@media screen and (min-width: $tablet) {
+			font-size: 14px;
+			line-height: 1.7;
+		}
+		@media screen and (min-width: $desktop) {
+			font-size: 16px;
+			line-height: 1.7;
+		}
 	}
 }
