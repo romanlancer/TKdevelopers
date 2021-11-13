@@ -1,17 +1,49 @@
 .gallery-section {
-	margin: 0 auto;
-	@media screen and (min-width: $mobile) {
-		padding-top: 97px;
-		padding-bottom: 80px;
-	}
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding-top: 139px;
+	background-color: #fff5f6;
+}
 
-	@media screen and (min-width: $tablet) {
-		padding-top: 140px;
-		padding-bottom: 121px;
-	}
+.thumb {
+	width: 140px;
+	margin-left: 5px;
+	border-radius: 20px;
+	overflow: hidden;
+}
 
-	@media screen and (min-width: $desktop) {
-		padding-top: 139px;
-		padding-bottom: 123px;
-	}
+.first-elem {
+	margin-top: 40px;
+}
+
+.last-elem {
+	margin-top: 40px;
+}
+
+.mb {
+	margin-bottom: 5px;
+}
+
+.up-block {
+	transform: translateY(-50px);
+}
+
+.thumb-big {
+	position: relative;
+	width: 280px;
+	margin-left: 5px;
+
+	transform: translateY(-30%);
+}
+
+.big-small-block {
+	display: flex;
+	flex-direction: column;
+}
+
+.thumb-under {
+	margin-left: 5px;
+	transform: translateY(-75px);
 }
