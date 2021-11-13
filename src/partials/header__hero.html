@@ -2,7 +2,15 @@
 	<div class="container header-hero__container">
 		<nav class="header-hero__nav">
 			<a href="./index.html" class="logo">
-				<img src="./images/header__hero/logo.png" alt="company logo" />
+				<picture>
+					<source
+						srcset="
+							./images/header__hero/logo.png    1x,
+							./images/header__hero/logo_2x.png 2x
+						"
+					/>
+					<img src="./images/header__hero/logo.png" alt="company logo" />
+				</picture>
 			</a>
 			<ul class="header-hero__navigation-list">
 				<li class="header-hero__navigation-item">
@@ -60,11 +68,17 @@
 			<div>
 				<picture class="milk-pic">
 					<source
-						srcset="./images/header__hero/milk-pic_t.png"
+						srcset="
+							./images/header__hero/milk-pic_t.png    1x,
+							./images/header__hero/milk-pic_t_2x.png 2x
+						"
 						media="(max-width: 1199px)"
 					/>
 					<source
-						srcset="./images/header__hero/milk-pic_d.png"
+						srcset="
+							./images/header__hero/milk-pic_d.png    1x,
+							./images/header__hero/milk-pic_d_2x.png 2x
+						"
 						media="(min-width: 1200px)"
 					/>
 					<img src="./images/header__hero/milk-pic_d.png" alt="milk picture" />
@@ -77,11 +91,17 @@
 				</p>
 				<picture>
 					<source
-						srcset="./images/header__hero/arrow-right_t.png"
+						srcset="
+							./images/header__hero/arrow-right_t.png    1x,
+							./images/header__hero/arrow-right_t_2x.png 2x
+						"
 						media="(max-width: 1199px)"
 					/>
 					<source
-						srcset="./images/header__hero/arrow-right_d.png"
+						srcset="
+							./images/header__hero/arrow-right_d.png    1x,
+							./images/header__hero/arrow-right_d_2x.png 2x
+						"
 						media="(min-width: 1200px)"
 					/>
 					<img
@@ -106,17 +126,23 @@
 
 		<picture class="ice-cream-pic">
 			<source
-				srcset="./images/header__hero/ice-cream-pic_m.png"
+				srcset="
+					./images/header__hero/ice-cream-pic_m.png    1x,
+					./images/header__hero/ice-cream-pic_m_2x.png 2x
+				"
 				media="(max-width: 767px)"
 			/>
 			<source
-				srcset="./images/header__hero/ice-cream-pic_t.png"
+				srcset="
+					./images/header__hero/ice-cream-pic_t.png    1x,
+					./images/header__hero/ice-cream-pic_t_2x.png 2x
+				"
 				media="(max-width: 1199px)"
 			/>
 			<source
 				srcset="
 					./images/header__hero/ice-cream-pic_d.png    1x,
-					./images/header__hero/ice-cream-pic_test.png 2x
+					./images/header__hero/ice-cream-pic_d_2x.png 2x
 				"
 				media="(min-width: 1200px)"
 			/>
@@ -128,11 +154,17 @@
 
 		<picture class="girl-pic">
 			<source
-				srcset="./images/header__hero/girl-pic_t.png"
+				srcset="
+					./images/header__hero/girl-pic_t.png    1x,
+					./images/header__hero/girl-pic_t_2x.png 2x
+				"
 				media="(max-width: 1199px)"
 			/>
 			<source
-				srcset="./images/header__hero/girl-pic_d.png"
+				srcset="
+					./images/header__hero/girl-pic_d.png    1x,
+					./images/header__hero/girl-pic_d_2x.png 2x
+				"
 				media="(min-width: 1200px)"
 			/>
 			<img
