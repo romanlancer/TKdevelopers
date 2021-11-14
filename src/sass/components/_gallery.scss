@@ -3,7 +3,7 @@
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	padding-top: 139px;
+
 	background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
 }
 
@@ -29,22 +29,18 @@
 	transform: translateY(-50px);
 }
 
-.thumb-big {
-	margin-left: 5px;
-
-	transform: translateY(-30%);
+.upper-block {
+	transform: translateY(-100px);
 }
 
-.big-small-block {
-	display: flex;
-	flex-direction: column;
+.thumb-big {
+	display: block;
+	margin-left: 5px;
+
+	// transform: translateY(-80px);
 }
 
 .thumb-under {
-	margin-left: 5px;
-	transform: translateY(-75px);
-}
-
-.gallery__img:hover {
-	transform: scale(105%);
+	display: inline-flex;
+	margin-top: 5px;
 }
