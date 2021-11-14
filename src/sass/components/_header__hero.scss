@@ -10,7 +10,7 @@
 
 	@media screen and (min-width: $desktop) {
 		height: 665px;
-		padding: 37px 20px 0px 20px;
+		padding: 37px 20px 0px 46px;
 	}
 }
 
@@ -55,6 +55,7 @@
 		width: 159px;
 		height: 44px;
 		border-radius: 22px;
+		z-index: 1;
 		@include fonts(1.31, 700, 16px, center, 0.04em, none);
 		background-color: var(--second-background-and-text-color);
 		color: var(--accent-and-text-color);
@@ -281,8 +282,8 @@
 	}
 
 	@media screen and (min-width: $desktop) {
-		top: 170px;
-		right: 110px;
+		top: 160px;
+		right: 90px;
 	}
 
 	&__circle {
@@ -328,8 +329,8 @@
 		display: none;
 	}
 	@media screen and (min-width: $desktop) {
-		top: 260px;
-		right: 110px;
+		top: 250px;
+		right: 90px;
 	}
 
 	&__circle {
@@ -390,5 +391,8 @@
 	right: 40px;
 	@media screen and (max-width: 767px) {
 		display: none;
+	}
+	@media screen and (min-width: $desktop) {
+		right: 100px;
 	}
 }
