@@ -41,6 +41,7 @@
 		#e1e1e1 30px
 	);
 	position: relative;
+
 	// font-weight: 500;
 	// font-size: 16px;
 	// line-height: 1.86;
@@ -68,6 +69,10 @@
 	position: absolute;
 	top: -12px;
 	left: 4px;
+	@media screen and (min-width: 768px) {
+		top: -20px;
+		left: -30px;
+	}
 }
 .reviews-decordots {
 	display: flex;
