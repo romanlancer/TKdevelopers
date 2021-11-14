@@ -1,6 +1,6 @@
 .contacts {
 	// padding-top: 134px;
-
+	background-color: #fff5f6;
 	@media screen and (min-width: $tablet) {
 		// padding-top: 197px;
 	}
@@ -11,8 +11,9 @@
                                       rgba(var(--background-and-text-color), 0.4),
                                       rgba(var(--second-background-and-text-color), 0.4),
                                       utr('../images/contact-bg.jpg'));*/
-		background-color: #fff5f6;
-		background-image: url('../images/color_plums.png');
+
+		background-image: url('../images/color_plums.png'),
+			linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 1));
 		background-repeat: no-repeat;
 		background-size: contain;
 		// background-position-y: 40%;
