@@ -1,14 +1,13 @@
-.gallery-section {
+.gallery {
 	position: relative;
 	display: flex;
 	justify-content: center;
 	width: 100%;
 	padding-top: 139px;
-	background-color: #fff5f6;
+	background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
 }
 
 .thumb {
-	width: 140px;
 	margin-left: 5px;
 	border-radius: 20px;
 	overflow: hidden;
@@ -31,7 +30,6 @@
 }
 
 .thumb-big {
-	width: 280px;
 	margin-left: 5px;
 
 	transform: translateY(-30%);
@@ -45,4 +43,8 @@
 .thumb-under {
 	margin-left: 5px;
 	transform: translateY(-75px);
+}
+
+.gallery__img:hover {
+	transform: scale(110%);
 }
