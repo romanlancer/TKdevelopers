@@ -86,22 +86,17 @@
 	transition: transform 200ms linear;
 
 	&:hover {
+		position: relative;
 		transform: scale(150%);
 		z-index: 5;
 	}
-
-	// transform: translateY(-80px);
 }
 
 .thumb-under {
 	display: inline-flex;
 	margin-top: 5px;
 
-	@media (min-width: 320px) and (max-width: 480px) {
-		width: 50%;
-	}
-
-	@media (min-width: 480px) and (max-width: 768px) {
+	@media (min-width: 320px) and (max-width: 1200px) {
 		width: 50%;
 	}
 }
