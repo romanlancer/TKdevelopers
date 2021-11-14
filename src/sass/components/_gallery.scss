@@ -12,6 +12,10 @@
 	margin-left: 5px;
 	border-radius: 20px;
 	overflow: hidden;
+
+	&:hover {
+		transform: scale(110%);
+	}
 }
 
 .first-elem {
@@ -37,6 +41,10 @@
 .thumb-big {
 	display: block;
 	margin-left: 5px;
+
+	&:hover {
+		transform: scale(110%);
+	}
 
 	// transform: translateY(-80px);
 }
