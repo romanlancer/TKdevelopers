@@ -13,6 +13,12 @@
 	border-radius: 20px;
 	overflow: hidden;
 
+	transition: transform 200ms linear;
+
+	@media (min-width: 320px) {
+		border-radius: 2px;
+	}
+
 	&:hover {
 		transform: scale(110%);
 	}
@@ -20,10 +26,26 @@
 
 .first-elem {
 	margin-top: 40px;
+
+	@media (min-width: 320px) {
+		margin-top: 20px;
+	}
+
+	@media (min-width: 768px) {
+		margin-top: 40px;
+	}
 }
 
 .last-elem {
 	margin-top: 40px;
+
+	@media (min-width: 320px) {
+		margin-top: 20px;
+	}
+
+	@media (min-width: 768px) {
+		margin-top: 40px;
+	}
 }
 
 .mb {
@@ -32,15 +54,33 @@
 
 .up-block {
 	transform: translateY(-50px);
+
+	@media (min-width: 320px) {
+		transform: translateY(-20px);
+	}
+
+	@media (min-width: 768px) {
+		transform: translateY(-30px);
+	}
 }
 
 .upper-block {
 	transform: translateY(-100px);
+
+	@media (min-width: 320px) {
+		transform: translateY(-40px);
+	}
+
+	@media (min-width: 768px) {
+		transform: translateY(-60px);
+	}
 }
 
 .thumb-big {
 	display: block;
 	margin-left: 5px;
+
+	transition: transform 200ms linear;
 
 	&:hover {
 		transform: scale(110%);
@@ -52,4 +92,8 @@
 .thumb-under {
 	display: inline-flex;
 	margin-top: 5px;
+
+	@media (min-width: 320px) and (max-width: 768px) {
+		max-width: 90px;
+	}
 }
