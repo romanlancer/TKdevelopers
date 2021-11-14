@@ -9,6 +9,7 @@
 }
 
 .thumb {
+	display: block;
 	margin-left: 5px;
 	border-radius: 20px;
 	overflow: hidden;
@@ -20,7 +21,9 @@
 	}
 
 	&:hover {
-		transform: scale(110%);
+		position: relative;
+		transform: scale(150%);
+		z-index: 5;
 	}
 }
 
@@ -83,7 +86,8 @@
 	transition: transform 200ms linear;
 
 	&:hover {
-		transform: scale(110%);
+		transform: scale(150%);
+		z-index: 5;
 	}
 
 	// transform: translateY(-80px);
@@ -93,7 +97,11 @@
 	display: inline-flex;
 	margin-top: 5px;
 
-	@media (min-width: 320px) and (max-width: 768px) {
-		max-width: 90px;
+	@media (min-width: 320px) and (max-width: 480px) {
+		width: 50%;
+	}
+
+	@media (min-width: 480px) and (max-width: 768px) {
+		width: 50%;
 	}
 }
