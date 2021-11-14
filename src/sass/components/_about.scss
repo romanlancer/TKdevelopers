@@ -25,14 +25,25 @@
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: 50% 96%;
+	@media (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		background-image: url(../images/about/aboutbg-m__2x.png);
+	}
 
 	@media screen and (min-width: $tablet) {
 		background-image: none;
 	}
 
-	@media screen and (min-width: $desktop) {
+	@media (min-width: $desktop) {
 		background-image: url(../images/about/aboutbg-d.png);
 		background-position: 50% 118%;
+
+		@media (min-width: $desktop) and (min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+			background-image: url(../images/about/aboutbg-d__2x.png);
+		}
 	}
 
 	&__text {
