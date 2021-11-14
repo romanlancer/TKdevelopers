@@ -214,6 +214,10 @@
 		display: flex;
 		align-items: center;
 		margin-top: 20px;
+		padding-left: 0px;
+		@media screen and (min-width: $desktop) {
+			padding-left: 50px;
+		}
 	}
 
 	&__advertisement {

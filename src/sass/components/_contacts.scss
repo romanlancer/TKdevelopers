@@ -1,23 +1,13 @@
 .contacts {
-	// padding-top: 134px;
-	background-color: #fff5f6;
-	@media screen and (min-width: $tablet) {
-		// padding-top: 197px;
-	}
-	@media screen and (min-width: $desktop) {
-		// padding-top: 234px;
-		/*background-image: linear-gradient(to bottom, 
-                                      rgba(var(--second-background-and-text-color), 0.4),                                  
-                                      rgba(var(--background-and-text-color), 0.4),
-                                      rgba(var(--second-background-and-text-color), 0.4),
-                                      utr('../images/contact-bg.jpg'));*/
+	background-image: linear-gradient(to bottom, #ffffff 84px, #fff5f6 40px);
 
+	@media screen and (min-width: $desktop) {
 		background-image: url('../images/color_plums.png'),
-			linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 1));
-		background-repeat: no-repeat;
-		background-size: contain;
-		// background-position-y: 40%;
+			linear-gradient(to bottom, #ffffff 84px, #fff5f6 40px);
 	}
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position-y: 20%;
 }
 .contacts__container {
 	padding-right: 50px;
