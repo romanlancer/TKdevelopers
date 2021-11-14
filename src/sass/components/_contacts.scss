@@ -11,9 +11,8 @@
                                       rgba(var(--background-and-text-color), 0.4),
                                       rgba(var(--second-background-and-text-color), 0.4),
                                       utr('../images/contact-bg.jpg'));*/
-
 		background-color: #fff5f6;
-		background-image: url('/images/color_plums.png');
+		background-image: url('../images/color_plums.png');
 		background-repeat: no-repeat;
 		background-size: contain;
 		// background-position-y: 40%;
@@ -43,6 +42,9 @@
 
 		margin-left: -20px;
 	}
+	@media screen and (min-width: $desktop) {
+		margin-left: -30px;
+	}
 }
 .contacts__card {
 	background: var(--second-background-and-text-color);
@@ -56,6 +58,10 @@
 		flex-basis: calc(100% / 3 - 20px);
 		margin-bottom: 0px;
 		margin-left: 20px;
+	}
+	@media screen and (min-width: $tablet) {
+		flex-basis: calc(100% / 3 - 30px);
+		margin-left: 30px;
 	}
 }
 .contacts__title {
@@ -215,14 +221,27 @@
 	}
 }
 .btn-red {
+	position: relative;
+	top: 0;
 	background-color: var(--accent-and-text-color);
 	// margin-bottom: 10px;
 	color: var(--second-background-and-text-color);
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		top 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	&:hover,
 	&:focus {
+		top: 2px;
 		background-color: var(--second-hover-color);
+		box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+			0px 2px 2px rgba(0, 0, 0, 0.12);
+
 		//color:var(--accent-and-text-color);
+	}
+	&:active {
+		box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.1),
+			inset 0px 1px 2px rgba(0, 0, 0, 0.08),
+			inset 0px 2px 2px rgba(0, 0, 0, 0.12);
 	}
 	// @media screen and (min-width: $tablet) {
 	// 	margin-bottom: 0;
@@ -231,11 +250,21 @@
 .btn-white {
 	background-color: var(--second-background-and-text-color);
 	color: var(--accent-and-text-color);
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		top 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	&:hover,
 	&:focus {
+		top: 2px;
 		background-color: var(--first-hover-color);
+		box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+			0px 2px 2px rgba(0, 0, 0, 0.12);
 		// color: var(--second-background-and-text-color);
+	}
+	&:active {
+		box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.1),
+			inset 0px 1px 2px rgba(0, 0, 0, 0.08),
+			inset 0px 2px 2px rgba(0, 0, 0, 0.12);
 	}
 }
 .btn__arrow-white {

@@ -1,6 +1,6 @@
 .customer_reviews {
-	padding-top: 124px;
-	padding-bottom: 36px;
+	// padding-top: 124px;
+	padding-bottom: 124px;
 }
 .swiper {
 	min-width: 280px;
@@ -53,7 +53,7 @@
 	text-align: center;
 	padding-left: 8px;
 	padding-right: 16px;
-	color: #000000;
+	color: var(--second-text-color);
 	@media screen and (min-width: 768px) {
 		font-size: 14px;
 		line-height: 2.16;
@@ -91,6 +91,6 @@
 	font-size: 14px;
 	line-height: 1.86;
 	text-align: center;
-	color: #000000;
+	color: var(--second-text-color);
 	padding-bottom: 50px;
 }
