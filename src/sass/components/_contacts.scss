@@ -1,14 +1,9 @@
 .contacts {
 	// padding-top: 134px;
+
 	@media screen and (min-width: $tablet) {
 		// padding-top: 197px;
 	}
-	background-image: linear-gradient(
-		to bottom,
-		var(--second-background-and-text-color),
-		var(--background-and-text-color),
-		var(--second-background-and-text-color)
-	);
 	@media screen and (min-width: $desktop) {
 		// padding-top: 234px;
 		/*background-image: linear-gradient(to bottom, 
@@ -16,15 +11,12 @@
                                       rgba(var(--background-and-text-color), 0.4),
                                       rgba(var(--second-background-and-text-color), 0.4),
                                       utr('../images/contact-bg.jpg'));*/
-		background-image: linear-gradient(
-				to bottom,
-				rgba(#ffffff, 0.4),
-				rgba(#ffb8ca, 0.4),
-				rgba(#ffffff, 0.4)
-			),
-			url('/images/contact-bg.jpg');
+
+		background-color: #fff5f6;
+		background-image: url('/images/color_plums.png');
 		background-repeat: no-repeat;
 		background-size: contain;
+		// background-position-y: 40%;
 	}
 }
 .contacts__container {
@@ -43,29 +35,27 @@
 		// padding-top: 132px;
 	}
 }
-.cards_container {
-	// padding-top: -84px;
-	// margin-top: -30%;
-}
+
 .contacts__cards {
-	width: 100%;
 	@media screen and (min-width: $tablet) {
 		display: flex;
 		flex-wrap: wrap;
-		margin-left: -30px;
+
+		margin-left: -20px;
 	}
 }
 .contacts__card {
 	background: var(--second-background-and-text-color);
 	box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 	border-radius: 24px;
-	width: 100%;
-	padding-bottom: 43px;
+	// padding: 50px 31px;
+	// padding-bottom: 43px;
 	margin-bottom: 20px;
 
 	@media screen and (min-width: $tablet) {
-		flex-basis: calc(100% / 3 - 30px);
-		margin-left: 30px;
+		flex-basis: calc(100% / 3 - 20px);
+		margin-bottom: 0px;
+		margin-left: 20px;
 	}
 }
 .contacts__title {
@@ -87,6 +77,7 @@
 		@include objectForm(73px, 28px, 6px);
 		font-size: 14px;
 		line-height: 1.87;
+		margin-left: 43px;
 	}
 	@media screen and (min-width: $desktop) {
 		font-size: 16px;
@@ -108,37 +99,45 @@
 	@media screen and (min-width: $tablet) {
 		@include fonts(1.87, 500, 14px, left, 0.04em, none);
 		padding-left: 31px;
-		padding-top: 32px;
+		padding-top: 30px;
 	}
 	@media screen and (min-width: $desktop) {
 		font-size: 16px;
+		padding-left: 43px;
+		padding-top: 32px;
 	}
 }
 .contacts__text {
 	padding-left: 20px;
 	padding-top: 10px;
 	@include fonts(1.5, 500, 12px, left, 0.04em, none);
-	color: #907e82;
+	color: var(--third-text-color);
 	padding-bottom: 25px;
 	@media screen and (min-width: $tablet) {
 		padding-left: 31px;
 		font-size: 14px;
 		line-height: 1.87;
-		padding-bottom: 32px;
+		padding-bottom: 30px;
 	}
 	@media screen and (min-width: $desktop) {
 		font-size: 16px;
+		padding-left: 43px;
+		padding-bottom: 32px;
 	}
 }
 .contacts__thumb {
-	margin: 0px 20px;
-	padding: 25px 0px;
+	padding: 25px 20px;
 	border-bottom: 1px solid #e1e1e1;
 	border-top: 1px solid #e1e1e1;
 	@media screen and (min-width: $tablet) {
-		margin-left: 31px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-left: 30px;
+	}
+	@media screen and (min-width: $desktop) {
 		padding-top: 32px;
 		padding-bottom: 32px;
+		padding-left: 43px;
 	}
 }
 .contacts__days {
@@ -164,9 +163,12 @@
 	}
 }
 .contacts__list {
-	padding: 25px 0px 0px 20px;
+	padding: 25px 0px 43px 20px;
 	@media screen and (min-width: $tablet) {
-		padding: 32px 0px 0px 31px;
+		padding: 30px 0px 50px 31px;
+	}
+	@media screen and (min-width: $desktop) {
+		padding: 32px 0px 61px 43px;
 	}
 }
 .contacts__link {
@@ -185,22 +187,25 @@
 
 	@media screen and (min-width: $tablet) {
 		@include centralFlex();
+		margin-top: 81px;
 		padding-bottom: 158px;
-		margin: 0 auto;
 	}
 	@media screen and (min-width: $desktop) {
+		margin-top: 86px;
 		padding-bottom: 165px;
 	}
 }
 
 .btn {
 	display: block;
-
+	margin: 0 auto;
+	margin-bottom: 10px;
 	@include objectForm(160px, 44px, 22px);
 	@include fonts(1.3, 700, 16px, center, 0.04em, none);
 	align-items: center;
 	@media screen and (min-width: $tablet) {
 		@include centralFlex();
+		margin: 0;
 		margin-right: 15px;
 		@include objectForm(191px, 44px, 22px);
 		font-size: 16px;

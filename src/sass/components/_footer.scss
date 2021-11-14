@@ -1,11 +1,10 @@
 .footer {
+	background-color: #fff5f6;
 }
 
 .footer__container {
 	padding-right: 20px;
 	padding-left: 20px;
-	background-color: #fff5f6;
-	
 
 	@media screen and (min-width: 768px) {
 		max-width: 768px;
@@ -15,7 +14,6 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		padding-bottom: 20px;
-		
 	}
 
 	@media screen and (min-width: 1280px) {
@@ -24,16 +22,12 @@
 		padding-left: 115px;
 		padding-bottom: 10px;
 	}
-	
 }
 
-
-.footer__box-contact{
-
-	 display: block;
-    margin: auto;
+.footer__box-contact {
+	display: block;
+	margin: auto;
 }
-
 
 .footer__text {
 	font-family: Titan One;
@@ -41,18 +35,17 @@
 	width: 232px;
 	color: var(--first-text-color);
 	margin-bottom: 17px;
-	
 
 	@media screen and (min-width: 768px) {
-	@include fonts(1.15, 400, 26px, unset, 0.04em, uppercase);
-	width: 340px;
-	margin-bottom: 16px;
+		@include fonts(1.15, 400, 26px, unset, 0.04em, uppercase);
+		width: 340px;
+		margin-bottom: 16px;
 	}
 
-	@media screen and (min-width: 1280px){
-	@include fonts(1.13, 400, 30px, unset, 0.04em, uppercase);
-	width: 472px;
-	margin-bottom: 15px;
+	@media screen and (min-width: 1280px) {
+		@include fonts(1.13, 400, 30px, unset, 0.04em, uppercase);
+		width: 472px;
+		margin-bottom: 15px;
 	}
 }
 
@@ -63,15 +56,15 @@
 	color: var(--accent-and-text-color);
 	margin-bottom: 43px;
 
-	@media screen and (min-width: 768px){
-	@include fonts(1.14, 400, 48px, unset, 0.06em, uppercase);
-	width: 340px;
-	margin-bottom: 91px;
+	@media screen and (min-width: 768px) {
+		@include fonts(1.14, 400, 48px, unset, 0.06em, uppercase);
+		width: 340px;
+		margin-bottom: 91px;
 	}
-	@media screen and (min-width: 1280px){
-	@include fonts(1.13, 400, 58px, unset, 0.06em, uppercase);
-    width: 480px;
-    margin-bottom: 97px;
+	@media screen and (min-width: 1280px) {
+		@include fonts(1.13, 400, 58px, unset, 0.06em, uppercase);
+		width: 480px;
+		margin-bottom: 97px;
 	}
 }
 
@@ -88,8 +81,8 @@
 	display: flex;
 	justify-content: flex-end;
 	margin-bottom: 46px;
-	@media screen and (min-width: 1280px){
-	margin-bottom: 50px;
+	@media screen and (min-width: 1280px) {
+		margin-bottom: 50px;
 	}
 }
 
@@ -100,21 +93,20 @@
 .footer__contact {
 	font-style: normal;
 	@include fonts(1.83, 700, 12px, right, 0.04em, none);
-	
+
 	margin-bottom: 43px;
 
-	@media screen and (min-width: 768px){
-	@include fonts(1.85, 700, 14px, right, 0.04em, none);
-	
+	@media screen and (min-width: 768px) {
+		@include fonts(1.85, 700, 14px, right, 0.04em, none);
 	}
-	@media screen and (min-width: 1280px){
-	@include fonts(1.87, 700, 16px, right, 0.02em, none);
-	margin-bottom: 98px;
+	@media screen and (min-width: 1280px) {
+		@include fonts(1.87, 700, 16px, right, 0.02em, none);
+		margin-bottom: 98px;
 	}
 }
 
 .footer__contact-text {
-	color:var(--second-text-color) ;
+	color: var(--second-text-color);
 }
 
 .footer__tel {
@@ -122,7 +114,6 @@
 }
 
 .footer__bord {
-	
 	border-bottom: 1px solid #e1e1e1;
 	margin-bottom: 22px;
 	margin-left: -20px;
@@ -132,11 +123,10 @@
 		margin-left: -246px;
 		margin-right: -246px;
 	}
-	@media screen and (min-width: 1280px){
+	@media screen and (min-width: 1280px) {
 		margin-bottom: 10px;
 		margin-left: -462px;
 		margin-right: -462px;
-		
 	}
 }
 
@@ -146,23 +136,18 @@
 	color: var(--third-text-color);
 	margin: 0 auto;
 
-	@media screen and (min-width: 768px){
-	@include fonts(1.85, 700, 14px, unset, 0.02em, none);
-	display: initial;
+	@media screen and (min-width: 768px) {
+		@include fonts(1.85, 700, 14px, unset, 0.02em, none);
+		display: initial;
 	}
-	
 }
 
 .copyright-second {
 	padding-bottom: 25px;
-	@media screen and (min-width: 768px){
+	@media screen and (min-width: 768px) {
 		padding-bottom: 0px;
 	}
-	@media screen and (min-width: 1280px){
+	@media screen and (min-width: 1280px) {
 		padding-bottom: 10px;
-		
 	}
 }
-
-
-
