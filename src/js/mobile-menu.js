@@ -2,6 +2,10 @@
 	const mobileMenu = document.querySelector('.js-menu-container');
 	const openMenuBtn = document.querySelector('.js-open-menu');
 	const closeMenuBtn = document.querySelector('.js-close-menu');
+	const closeMenuRewiew = document.querySelector('.js-close-menu-rewiews');
+	const closeMenuAbout = document.querySelector('.js-close-menu-about');
+	const closeMenuProducts = document.querySelector('.js-close-menu-products');
+	const closeMenuContacts = document.querySelector('.js-close-menu-contacts');
 
 	const toggleMenu = () => {
 		const isMenuOpen =
@@ -17,6 +21,11 @@
 
 	openMenuBtn.addEventListener('click', toggleMenu);
 	closeMenuBtn.addEventListener('click', toggleMenu);
+	closeMenuRewiew.addEventListener('click', toggleMenu);
+	closeMenuAbout.addEventListener('click', toggleMenu);
+	closeMenuProducts.addEventListener('click', toggleMenu);
+	closeMenuContacts.addEventListener('click', toggleMenu);
+
 
 	// Закрываем мобильное меню на более широких экранах
 	// в случае изменения ориентации устройства.
@@ -27,3 +36,5 @@
 		bodyScrollLock.enableBodyScroll(document.body);
 	});
 })();
+
+
