@@ -2,7 +2,7 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 
 },{}],"clu1":[function(require,module,exports) {
 
-},{"animate.css":"TOx8","./../images/products/points.png":[["points.5bada95c.png","VFRQ"],"VFRQ"],"./../images/about/aboutbg-m.png":[["aboutbg-m.e0f27bb1.png","DDh7"],"DDh7"],"./../images/about/aboutbg-m__2x.png":[["aboutbg-m__2x.9d104c62.png","hKwy"],"hKwy"],"./../images/about/aboutbg-d.png":[["aboutbg-d.b34d117e.png","KNxb"],"KNxb"],"./../images/about/aboutbg-d__2x.png":[["aboutbg-d__2x.4985b474.png","LZtQ"],"LZtQ"],"./../images/customer__reviews/bullet-active.svg":[["bullet-active.ef18745b.svg","r3t1"],"r3t1"],"./../images/color_plums.png":[["color_plums.93c65e71.png","CjWE"],"CjWE"]}],"Focm":[function(require,module,exports) {
+},{"animate.css":"TOx8","./../images/products/points.png":[["points.5bada95c.png","VFRQ"],"VFRQ"],"./../images/about/aboutbg-m.png":[["aboutbg-m.e0f27bb1.png","DDh7"],"DDh7"],"./../images/about/aboutbg-m__2x.png":[["aboutbg-m__2x.9d104c62.png","hKwy"],"hKwy"],"./../images/about/aboutbg-d.png":[["aboutbg-d.b34d117e.png","KNxb"],"KNxb"],"./../images/about/aboutbg-d__2x.png":[["aboutbg-d__2x.4985b474.png","LZtQ"],"LZtQ"],"./../images/customer__reviews/bullet-active.svg":[["bullet-active.ef18745b.svg","r3t1"],"r3t1"],"./../images/color_plums.png":[["color_plums.93c65e71.png","CjWE"],"CjWE"],"./../images/color_plums_2x.png":[["color_plums_2x.94b433bc.png","usqy"],"usqy"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/TKdevelopers/src.90decfbb.js.map
+//# sourceMappingURL=/TKdevelopers/src.913e5417.js.map
