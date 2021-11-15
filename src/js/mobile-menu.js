@@ -7,11 +7,16 @@
 	const closeMenuProducts = document.querySelector('.js-close-menu-products');
 	const closeMenuContacts = document.querySelector('.js-close-menu-contacts');
 
+	const noScroll = document.querySelector('html');
+
+
 	const toggleMenu = () => {
 		const isMenuOpen =
 			openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
 		openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
 		mobileMenu.classList.toggle('is-open');
+
+		noScroll.classList.toggle('no-scroll');
 
 		const scrollLockMethod = !isMenuOpen
 			? 'disableBodyScroll'
