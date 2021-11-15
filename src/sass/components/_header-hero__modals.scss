@@ -423,19 +423,7 @@ input[type='radio']:not(.select__input, .select__label) {
 		box-shadow: 0 0 0 var(--focus);
 	}
 	&:not(.switch) {
-		width: 34px;
-
-		@media screen and (min-width: 400px) {
-			width: 30px;
-		}
-
-		@media screen and (min-width: 420px) {
-			width: 27px;
-		}
-
-		@media screen and (min-width: $mobile) {
-			width: 23px;
-		}
+		min-width: 21px;
 
 		&:after {
 			opacity: var(--o, 0);
