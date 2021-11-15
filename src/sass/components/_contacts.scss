@@ -1,19 +1,21 @@
 .contacts {
 	background-image: linear-gradient(to bottom, #ffffff 84px, #fff5f6 40px);
-
+background-repeat: no-repeat;
+	background-size: contain;
+	background-position-y: 20%;
 	@media screen and (min-width: $desktop) {
 		background-image: url('../images/color_plums.png'),
 			linear-gradient(to bottom, #ffffff 84px, #fff5f6 40px);
-	}
-	@media (min-width: $desktop) and (min-device-pixel-ratio: 2),
+			
+			@media   (min-device-pixel-ratio: 2),
 			(min-resolution: 192dpi),
 			(min-resolution: 2dppx) {
 			background-image: url('../images/color_plums_2x.png'),
 			linear-gradient(to bottom, #ffffff 84px, #fff5f6 40px);
 		}
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position-y: 20%;
+	}
+	
+	
 }
 .contacts__container {
 	padding-right: 50px;
