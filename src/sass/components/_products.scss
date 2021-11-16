@@ -75,8 +75,11 @@
 			top: 68px;
 		}
 	}
+	@media screen and (min-width: $desktop) {
+		font-size: 30px;
+		line-height: calc(34 / 30);
+	}
 }
-
 .products__list {
 	@media screen and (min-width: 320px) and (max-width: 767px) {
 		text-align: center;
