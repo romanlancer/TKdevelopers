@@ -1,4 +1,5 @@
 (() => {
+	const mobileMenuWrapper = document.querySelector('.mobile-menu-wrapper');
 	const mobileMenu = document.querySelector('.js-menu-container');
 	const openMenuBtn = document.querySelector('.js-open-menu');
 	const closeMenuBtn = document.querySelector('.js-close-menu');
@@ -6,8 +7,9 @@
 	const closeMenuAbout = document.querySelector('.js-close-menu-about');
 	const closeMenuProducts = document.querySelector('.js-close-menu-products');
 	const closeMenuContacts = document.querySelector('.js-close-menu-contacts');
-
+	
 	const noScroll = document.querySelector('html');
+	
 
 
 	const toggleMenu = () => {
@@ -15,6 +17,7 @@
 			openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
 		openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
 		mobileMenu.classList.toggle('is-open');
+		mobileMenuWrapper.classList.toggle('is-open');
 
 		noScroll.classList.toggle('no-scroll');
 
@@ -31,6 +34,23 @@
 	closeMenuProducts.addEventListener('click', toggleMenu);
 	closeMenuContacts.addEventListener('click', toggleMenu);
 
+		document.addEventListener('click', function(e) {
+			if (e.target === mobileMenuWrapper) {
+		
+			const isMenuOpen =
+			openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+		openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+				mobileMenu.classList.toggle('is-open');
+				mobileMenuWrapper.classList.toggle('is-open');
+
+		noScroll.classList.toggle('no-scroll');
+
+		const scrollLockMethod = !isMenuOpen
+			? 'disableBodyScroll'
+			: 'enableBodyScroll';
+		bodyScrollLock[scrollLockMethod](document.body);
+  }
+});
 
 	// Закрываем мобильное меню на более широких экранах
 	// в случае изменения ориентации устройства.
