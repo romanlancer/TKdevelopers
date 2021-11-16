@@ -23,8 +23,9 @@ const swiper = new Swiper('.swiper', {
 });
 const swiper1 = new Swiper('.swiper1', {
   loop: true,
-  slideToClickedSlide: true,
-  touchRatio: 1,
+  navigation: {
+    nextEl: '.next-slide',
+  },
 
   pagination: {
     el: '.swiper-pagination',
