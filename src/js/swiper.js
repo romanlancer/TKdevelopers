@@ -22,22 +22,12 @@ const swiper = new Swiper('.swiper', {
   },
 });
 const swiper1 = new Swiper('.swiper1', {
-  // Optional parameters
   loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    dynamicBullets: true,
-    clickable: true,
-    // type: 'custom',
-    // bulletClass: 'swiper_pagination_img',
+  navigation: {
+    nextEl: '.next-slide',
   },
-  // autoplay: {
-  //   delay: 6000,
-  //   stopOnLastSlide: true,
-  //   disableOnInteraction: false,
-  // },
+  slideToClickedSlide: true,
+  touchRatio: 0, 
   effect: 'flip',
   flipEffect: {
     slideShadows: false,
