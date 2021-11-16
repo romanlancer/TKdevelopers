@@ -75,7 +75,6 @@
 		@include objectForm(73px, 28px, 6px);
 		font-size: 14px;
 		line-height: 1.87;
-		margin-left: 43px;
 	}
 	@media screen and (min-width: $desktop) {
 		font-size: 16px;
@@ -129,7 +128,8 @@
 	border-bottom: 1px solid #e1e1e1;
 	border-top: 1px solid #e1e1e1;
 	@media screen and (min-width: $tablet) {
-		margin: 0px 31px;
+		margin-left: 31px;
+		margin-right: 25px;
 		padding-top: 30px;
 		padding-bottom: 30px;
 	}
