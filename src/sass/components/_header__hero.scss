@@ -225,6 +225,10 @@
 			padding-left: 50px;
 		}
 	}
+	&__adv-wrap{
+		width: 450px;
+		height: 250px;
+	}
 
 	&__advertisement {
 		width: 114px;
@@ -401,3 +405,7 @@
 		right: 100px;
 	}
 }
+.hero__slider-slide {display: flex;}
+.hero__slider-img {display: block;}
+.hero__slider-text {display: block;
+padding-top: 60px;;}
