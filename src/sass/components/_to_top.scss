@@ -9,16 +9,13 @@
 	cursor: pointer;
 	text-align: center;
 	color: #fff;
-	border-radius: 4px;
-	background: green;
-	box-shadow: 0 0 0 3px rgba(0,0,0,.2);
 	opacity: 0;
 	visibility: hidden;
-  transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
-#toTop:hover {
-		background: darkgreen;
-}
+// #toTop:hover {
+		
+// }
 
 #toTop svg {
 	position: relative;
