@@ -18,17 +18,23 @@
 
 .modal {
 	position: absolute;
-	top: 50%;
+	top: 0;
 	left: 50%;
 	width: 90%;
 	min-height: 400px;
 	border-radius: 16px;
 	opacity: 1;
 
-	transform: translate(-50%, -50%) scale(1);
+	transform: translate(-50%, 0) scale(1);
 	background-color: #fff;
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
 		opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	@media screen and (min-height: 506px) {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 
 	@media screen and (min-width: $mobile) {
 		width: 450px;
