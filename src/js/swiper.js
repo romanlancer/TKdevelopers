@@ -40,7 +40,7 @@ const swiper1 = new Swiper('.swiper1', {
   // },
   effect: 'flip',
   flipEffect: {
-    slideShadows: true,
+    slideShadows: false,
     limitRotation: true,
   },
 });
