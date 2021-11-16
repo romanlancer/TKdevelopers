@@ -216,7 +216,7 @@
 	z-index: 300;
 	background-color: #d6144541;
 
-	&.is-hidden {
+	&.products__backdrop_is-hidden {
 		opacity: 0;
 		pointer-events: none;
 	}
