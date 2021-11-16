@@ -225,7 +225,7 @@
 			padding-left: 50px;
 		}
 	}
-	&__adv-wrap{
+	&__adv-wrap {
 		width: 450px;
 		height: 250px;
 	}
@@ -386,7 +386,8 @@
 .hero__slider-img {
 	width: 124px;
 	height: 124px;
-	@media screen and (min-width: $desktop){
+	margin-right: 20px;
+	@media screen and (min-width: $desktop) {
 		width: 190px;
 		height: 190px;
 	}
@@ -404,8 +405,10 @@
 		left: 600px;
 	}
 }
-.slide-pic-icecream {padding-top: 35px;
-	vertical-align: middle;}
+.slide-pic-icecream {
+	padding-top: 35px;
+	vertical-align: middle;
+}
 
 .girl-pic {
 	position: absolute;
@@ -418,6 +421,9 @@
 		right: 100px;
 	}
 }
-.hero__slider-slide {display: flex;}
+.hero__slider-slide {
+	display: flex;
+}
 .hero__slider-text {
-padding-top: 60px;}
+	padding-top: 60px;
+}
