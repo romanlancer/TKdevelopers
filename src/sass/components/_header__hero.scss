@@ -376,9 +376,19 @@
 	}
 }
 
-.milk-pic {
+.milk-pic,
+.ice-cream,
+.ice-cream3 {
 	@media screen and (max-width: 767px) {
 		display: none;
+	}
+}
+.hero__slider-img {
+	width: 124px;
+	height: 124px;
+	@media screen and (min-width: $desktop){
+		width: 190px;
+		height: 190px;
 	}
 }
 .ice-cream-pic {
@@ -394,6 +404,9 @@
 		left: 600px;
 	}
 }
+.slide-pic-icecream {padding-top: 35px;
+	vertical-align: middle;}
+
 .girl-pic {
 	position: absolute;
 	bottom: 0px;
@@ -406,6 +419,5 @@
 	}
 }
 .hero__slider-slide {display: flex;}
-.hero__slider-img {display: block;}
-.hero__slider-text {display: block;
-padding-top: 60px;;}
+.hero__slider-text {
+padding-top: 60px;}
