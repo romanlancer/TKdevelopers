@@ -1,9 +1,4 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-
-// Стили для файла с примером HTML-фрагмента
+@import 'animate.css';
 @import './utils/variables';
 @import './utils/base-reset';
 @import './utils/placeholders';
@@ -16,3 +11,9 @@
 @import './components/customer__reviews';
 @import './components/contacts';
 @import './components/footer';
+@import './components/header-hero__modals';
+@import './components/about__modal';
+@import './components/contacts__modals';
+@import './components/mobile__menu';
+@import './components/to_top';
+

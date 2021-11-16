@@ -1,7 +1,17 @@
-.main-nav {
+.header-hero__container {
 	position: relative;
-	height: 665px;
-	padding: 37px 0px 0px 20px;
+	height: 502px;
+	padding: 6px 20px 0px 20px;
+
+	@media screen and (min-width: $tablet) {
+		height: 399px;
+		padding: 37px 34px 0px 34px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		height: 665px;
+		padding: 37px 20px 0px 46px;
+	}
 }
 
 .header-hero {
@@ -15,12 +25,17 @@
 	&__navigation-list {
 		display: flex;
 		margin: 0 110px;
+
+		@media screen and (max-width: 1279px) {
+			display: none;
+		}
 	}
 
 	&__navigation-item {
 		z-index: 1;
+
 		&:not(:last-child) {
-			margin-right: 50px;
+			margin-right: 35px;
 		}
 	}
 
@@ -29,98 +44,238 @@
 		@include fonts(1.31, 700, 16px, unset, 0.04em, none);
 		color: var(--second-background-and-text-color);
 		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		&--current {
+			color: var(--accent-and-text-color);
+		}
 
-		&:hover {
+		&:hover,
+		&:focus {
 			color: var(--accent-and-text-color);
 		}
 	}
 
 	&__button {
+		position: relative;
+		top: 0;
 		width: 159px;
 		height: 44px;
 		border-radius: 22px;
+		z-index: 1;
 		@include fonts(1.31, 700, 16px, center, 0.04em, none);
 		background-color: var(--second-background-and-text-color);
 		color: var(--accent-and-text-color);
-		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-		&:hover {
+		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+			box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+			top 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+		&:hover,
+		&:focus {
+			top: 2px;
 			background-color: var(--first-hover-color);
+			box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+				0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+		}
+
+		&:active {
+			box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.1),
+				inset 0px 1px 2px rgba(0, 0, 0, 0.08),
+				inset 0px 2px 2px rgba(0, 0, 0, 0.12);
 		}
 	}
+
+	&__burger {
+		background-color: transparent;
+		margin-left: auto;
+		z-index: 1;
+
+		@media screen and (min-width: $tablet) {
+			margin-right: 30px;
+			margin-left: 291px;
+		}
+		@media screen and (min-width: $desktop) {
+			display: none;
+		}
+	}
+
 	&__title-container {
 		display: flex;
 		flex-direction: column;
 		position: relative;
-		left: 69px;
-		margin-top: 84px;
+		margin-top: 137px;
+		z-index: 1;
+
+		@media screen and (min-width: $tablet) {
+			margin-top: var(--title-and-button-gap);
+		}
+
+		@media screen and (min-width: $desktop) {
+			left: 69px;
+			margin-top: 84px;
+		}
 	}
 
 	&__title {
-		width: 277px;
+		width: 218px;
 		font-family: 'Titan One';
 		display: flex;
 		flex-direction: column;
+		@media screen and (min-width: $tablet) {
+			width: 162px;
+		}
+		@media screen and (min-width: $desktop) {
+			width: 277px;
+		}
 
 		&-partial1 {
 			color: var(--second-background-and-text-color);
-			@include fonts(1.16, 400, 38px, unset, 0.04em, none);
+			@include fonts(1.15, 400, 26px, unset, 0.04em, none);
+
+			@media screen and (min-width: $tablet) {
+				@include fonts(1.14, 400, 22px, unset, 0.04em, none);
+			}
+
+			@media screen and (min-width: $desktop) {
+				@include fonts(1.16, 400, 38px, unset, 0.04em, none);
+			}
 		}
 		&-partial2 {
 			color: var(--accent-and-text-color);
-			@include fonts(0.9, 400, 58px, unset, 0.04em, none);
+			@include fonts(1, 400, 48px, unset, 0.04em, none);
+
+			@media screen and (min-width: $tablet) {
+				@include fonts(0.9, 400, 34px, unset, 0.04em, none);
+			}
+
+			@media screen and (min-width: $desktop) {
+				@include fonts(0.9, 400, 58px, unset, 0.04em, none);
+			}
 		}
 	}
 	&__title-buttons {
 		display: flex;
-		margin-top: 25px;
+		margin-top: 20px;
+		@media screen and (min-width: $desktop) {
+			margin-top: 25px;
+		}
 	}
 	&__title-btn1 {
-		width: 104px;
-		height: 40px;
-		border-radius: 20px;
-		font-size: 14px;
+		position: relative;
+		top: 0;
+		@include objectForm(62px, 24px, 20px);
+		@include fonts(1.25, 400, 8px, center, 0.04em, none);
 		margin-right: var(--title-and-button-gap);
 		background-color: var(--accent-and-text-color);
 		color: var(--second-background-and-text-color);
-		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-		&:hover {
+		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+			box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+			top 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		@media screen and (min-width: $desktop) {
+			@include objectForm(104px, 40px, 20px);
+			@include fonts(1.29, 400, 14px, center, 0.04em, none);
+		}
+		&:hover,
+		&:focus {
+			top: 2px;
 			background-color: var(--second-hover-color);
+			box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+				0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+		}
+		&:active {
+			box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.1),
+				inset 0px 1px 2px rgba(0, 0, 0, 0.08),
+				inset 0px 2px 2px rgba(0, 0, 0, 0.12);
 		}
 	}
 	&__title-btn2 {
-		width: 138px;
-		height: 40px;
-		border-radius: 20px;
-		font-size: 14px;
+		position: relative;
+		top: 0;
+		@include objectForm(83px, 24px, 20px);
+		@include fonts(1.25, 400, 8px, center, 0.04em, none);
 		background-color: var(--second-background-and-text-color);
 		color: var(--accent-and-text-color);
-		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-		&:hover {
+		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+			box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+			top 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		@media screen and (min-width: $desktop) {
+			@include objectForm(138px, 40px, 20px);
+			@include fonts(1.29, 400, 14px, center, 0.04em, none);
+		}
+		&:hover,
+		&:focus {
+			top: 2px;
 			background-color: var(--first-hover-color);
+			box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+				0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+		}
+		&:active {
+			box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.1),
+				inset 0px 1px 2px rgba(0, 0, 0, 0.08),
+				inset 0px 2px 2px rgba(0, 0, 0, 0.12);
 		}
 	}
 
+	&__adv-card {
+		display: flex;
+		align-items: center;
+		margin-top: 20px;
+		padding-left: 0px;
+		@media screen and (min-width: $desktop) {
+			padding-left: 50px;
+		}
+	}
+	&__adv-wrap {
+		width: 450px;
+		height: 250px;
+	}
+
 	&__advertisement {
-		position: relative;
-		left: 245px;
-		margin-top: 112px;
-		width: 200px;
-		height: 78px;
+		width: 114px;
+		height: 48px;
+
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+
+		@media screen and (min-width: $desktop) {
+			width: 200px;
+			height: 78px;
+		}
 		&-text {
-			@include fonts(1.43, 400, 14px, unset, 0.04em, none);
+			@include fonts(1.5, 400, 8px, unset, 0.04em, none);
 			color: var(--second-background-and-text-color);
-			margin-bottom: 20px;
+			margin-bottom: 7px;
+
+			@media screen and (min-width: $desktop) {
+				margin-bottom: 20px;
+				@include fonts(1.43, 400, 14px, unset, 0.04em, none);
+			}
 		}
 	}
 
 	&__circle {
-		width: 538px;
-		height: 538px;
+		width: 346px;
+		height: 344px;
 		border-radius: 50%;
 		background-color: var(--first-text-color);
 		position: absolute;
-		top: 10px;
-		left: 500px;
+		top: 80px;
+		right: -50px;
+
+		@media screen and (min-width: $tablet) {
+			width: 324px;
+			height: 322px;
+			top: 30px;
+			right: 140px;
+		}
+
+		@media screen and (min-width: $desktop) {
+			width: 538px;
+			height: 538px;
+			top: 50px;
+			left: 470px;
+		}
 	}
 }
 
@@ -129,26 +284,47 @@
 	flex-direction: column;
 	align-items: flex-end;
 	position: absolute;
-	top: 130px;
-	right: 70px;
+	top: 100px;
+	right: 40px;
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+
+	@media screen and (min-width: $desktop) {
+		top: 160px;
+		right: 90px;
+	}
+
 	&__circle {
 		position: absolute;
-		top: -5px;
-		right: -15px;
-		width: 30px;
-		height: 30px;
+		top: -3px;
+		right: -8px;
+		width: 16px;
+		height: 16px;
 		border-radius: 50%;
 		background-color: var(--second-background-and-text-color);
+		@media screen and (min-width: $desktop) {
+			top: -5px;
+			right: -15px;
+			width: 30px;
+			height: 30px;
+		}
 	}
 	&__num {
 		font-family: 'Titan One';
 		z-index: 1;
 		color: var(--accent-and-text-color);
-		@include fonts(1.15, 400, 46px, unset, 0.04em, none);
+		@include fonts(1.14, 400, 28px, unset, 0.04em, none);
+		@media screen and (min-width: $desktop) {
+			@include fonts(1.15, 400, 46px, unset, 0.04em, none);
+		}
 	}
 	&__text {
 		color: var(--second-background-and-text-color);
-		@include fonts(1.29, 400, 14px, unset, 0.04em, none);
+		@include fonts(1.3, 400, 8px, unset, 0.04em, none);
+		@media screen and (min-width: $desktop) {
+			@include fonts(1.29, 400, 14px, unset, 0.04em, none);
+		}
 	}
 }
 .company-abouts-2 {
@@ -156,42 +332,98 @@
 	flex-direction: column;
 	align-items: flex-end;
 	position: absolute;
-	top: 218px;
-	right: 70px;
+	top: 155px;
+	right: 40px;
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+	@media screen and (min-width: $desktop) {
+		top: 250px;
+		right: 90px;
+	}
+
 	&__circle {
 		position: absolute;
-		top: -5px;
-		right: -15px;
-
-		width: 30px;
-		height: 30px;
+		top: -3px;
+		right: -8px;
+		width: 16px;
+		height: 16px;
 		border-radius: 50%;
 		background-color: var(--second-background-and-text-color);
+
+		@media screen and (min-width: $desktop) {
+			top: -5px;
+			right: -15px;
+			width: 30px;
+			height: 30px;
+		}
 	}
 	&__num {
 		font-family: 'Titan One';
 		z-index: 1;
 		color: var(--accent-and-text-color);
-		@include fonts(1.15, 400, 46px, unset, 0.04em, none);
+		@include fonts(1.14, 400, 28px, unset, 0.04em, none);
+		@media screen and (min-width: $desktop) {
+			@include fonts(1.15, 400, 46px, unset, 0.04em, none);
+		}
 	}
 	&__text {
 		color: var(--second-background-and-text-color);
-		@include fonts(1.29, 400, 14px, unset, 0.04em, none);
+		@include fonts(1.3, 400, 8px, unset, 0.04em, none);
+		@media screen and (min-width: $desktop) {
+			@include fonts(1.29, 400, 14px, unset, 0.04em, none);
+		}
 	}
 }
 
-.milk-pic {
-	position: absolute;
-	bottom: 45px;
-	left: 50px;
+.milk-pic,
+.ice-cream,
+.ice-cream3 {
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+}
+.hero__slider-img {
+	width: 124px;
+	height: 124px;
+	margin-right: 20px;
+	@media screen and (min-width: $desktop) {
+		width: 190px;
+		height: 190px;
+	}
 }
 .ice-cream-pic {
 	position: absolute;
 	bottom: 0px;
-	left: 620px;
+	right: 32px;
+
+	@media screen and (min-width: $tablet) {
+		right: 240px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		left: 600px;
+	}
 }
+.slide-pic-icecream {
+	padding-top: 35px;
+	vertical-align: middle;
+}
+
 .girl-pic {
 	position: absolute;
 	bottom: 0px;
-	right: 100px;
+	right: 40px;
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+	@media screen and (min-width: $desktop) {
+		right: 100px;
+	}
+}
+.hero__slider-slide {
+	display: flex;
+}
+.hero__slider-text {
+	padding-top: 60px;
 }
