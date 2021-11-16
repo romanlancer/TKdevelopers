@@ -1,3 +1,7 @@
+.gallery-section {
+	background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
+}
+
 .gallery {
 	position: relative;
 
@@ -6,8 +10,6 @@
 	justify-content: center;
 	width: 100%;
 	padding-top: 60px;
-
-	background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
 }
 
 .thumb {
