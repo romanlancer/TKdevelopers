@@ -1,5 +1,6 @@
 .products {
-	padding: 121px 20px 98px 20px;
+	padding-top: 121px;
+	padding-bottom: 98px;
 
 	@media screen and (min-width: $tablet) {
 		padding-top: 122px;
@@ -136,7 +137,7 @@
 		min-height: 525px;
 		padding-top: 168px;
 		&:not(:last-child) {
-			margin-right: 30px;
+			margin-right: 23px;
 		}
 	}
 }
