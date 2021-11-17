@@ -51,13 +51,14 @@ button {
 }
 .container {
 	margin: 0 auto;
+	padding: 0 15px;
 	@media screen and (min-width: $mobile) {
-		width: $mobile;
+		width: 480px;
 	}
 	@media screen and (min-width: $tablet) {
-		width: $tablet;
+		width: 730px;
 	}
 	@media screen and (min-width: $desktop) {
-		width: $desktop;
+		width: 1080px;
 	}
 }
