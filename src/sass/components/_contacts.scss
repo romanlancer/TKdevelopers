@@ -3,6 +3,7 @@
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position-y: 20%;
+	padding-bottom: 113px;
 	@media screen and (min-width: $desktop) {
 		background-image: url('../images/color_plums.png'),
 			linear-gradient(to bottom, #ffffff 84px, #fff5f6 40px);
@@ -13,19 +14,6 @@
 			background-image: url('../images/color_plums_2x.png'),
 				linear-gradient(to bottom, #ffffff 84px, #fff5f6 40px);
 		}
-	}
-}
-.contacts__container {
-	padding-right: 50px;
-	padding-left: 50px;
-
-	@media screen and (min-width: $tablet) {
-		padding-right: 36px;
-		padding-left: 36px;
-	}
-	@media screen and (min-width: $desktop) {
-		padding-right: 50px;
-		padding-left: 50px;
 	}
 }
 
@@ -182,7 +170,6 @@
 }
 .contacts__wrapper {
 	margin-top: 54px;
-	padding-bottom: 113px;
 
 	@media screen and (min-width: $tablet) {
 		@include centralFlex();
