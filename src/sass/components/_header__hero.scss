@@ -21,9 +21,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		@media screen and (min-width: $tablet) {
-			justify-content: space-evenly;
-		}
 	}
 
 	&__navigation-list {
@@ -275,7 +272,7 @@
 			width: 538px;
 			height: 538px;
 			top: 50px;
-			left: 470px;
+			left: 720px;
 		}
 	}
 }
@@ -293,7 +290,7 @@
 
 	@media screen and (min-width: $desktop) {
 		top: 170px;
-		right: 90px;
+		right: 250px;
 	}
 
 	&__circle {
@@ -340,7 +337,7 @@
 	}
 	@media screen and (min-width: $desktop) {
 		top: 265px;
-		right: 90px;
+		right: 250px;
 	}
 
 	&__circle {
@@ -403,7 +400,7 @@
 	}
 
 	@media screen and (min-width: $desktop) {
-		left: 600px;
+		left: 850px;
 	}
 }
 .slide-pic-icecream {
@@ -419,7 +416,7 @@
 		display: none;
 	}
 	@media screen and (min-width: $desktop) {
-		right: 100px;
+		right: 260px;
 	}
 }
 .hero__slider-slide {
