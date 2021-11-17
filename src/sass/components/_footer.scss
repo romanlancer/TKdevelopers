@@ -20,6 +20,7 @@
 .footer__box-contact {
 	display: block;
 	margin: auto;
+	text-align: center;
 }
 
 .footer__text {
@@ -108,19 +109,12 @@
 
 .footer__bord {
 	border-bottom: 1px solid #e1e1e1;
-
 	margin-bottom: 22px;
-	margin-left: -20px;
-	margin-right: -20px;
 	@media screen and (min-width: 768px) {
 		margin-bottom: 29px;
-		margin-left: -246px;
-		margin-right: -246px;
 	}
 	@media screen and (min-width: 1280px) {
 		margin-bottom: 10px;
-		margin-left: -462px;
-		margin-right: -462px;
 	}
 }
 
