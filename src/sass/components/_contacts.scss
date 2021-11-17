@@ -112,8 +112,8 @@
 	}
 	@media screen and (min-width: $desktop) {
 		font-size: 16px;
-		padding-left: 43px;
-		padding-right: 44px;
+		padding-left: 42px;
+		padding-right: 42px;
 		padding-bottom: 32px;
 	}
 }
@@ -197,6 +197,9 @@
 	align-items: center;
 	&:not(:last-child) {
 		margin-bottom: 10px;
+		@media screen and (min-width: 1280px) {
+			margin-bottom: 0;
+		}
 	}
 
 	@media screen and (min-width: $tablet) {
