@@ -1,16 +1,23 @@
 .header-hero__container {
-	height: 502px;
-	padding: 6px 20px 0px 20px;
+	margin: 0 auto;
 	position: relative;
+	height: 502px;
+
+	padding: 6px 20px 0px 20px;
+	@media screen and (min-width: $mobile) {
+		width: 480px;
+	}
 
 	@media screen and (min-width: $tablet) {
+		width: 768px;
 		height: 399px;
 		padding: 37px 34px 0px 34px;
 	}
 
 	@media screen and (min-width: $desktop) {
+		width: 1280px;
 		height: 665px;
-		padding-left: 37px;
+		padding: 37px 20px 0px 46px;
 	}
 }
 
@@ -20,7 +27,6 @@
 	&__nav {
 		display: flex;
 		align-items: center;
-		justify-content: center;
 	}
 
 	&__navigation-list {
@@ -112,7 +118,7 @@
 		}
 
 		@media screen and (min-width: $desktop) {
-			left: 20px;
+			left: 60px;
 			margin-top: 84px;
 		}
 	}
@@ -222,6 +228,9 @@
 		align-items: center;
 		margin-top: 20px;
 		padding-left: 0px;
+		@media screen and (min-width: $desktop) {
+			padding-left: 50px;
+		}
 	}
 	&__adv-wrap {
 		width: 450px;
@@ -272,7 +281,7 @@
 			width: 538px;
 			height: 538px;
 			top: 50px;
-			left: 670px;
+			left: 470px;
 		}
 	}
 }
@@ -289,8 +298,8 @@
 	}
 
 	@media screen and (min-width: $desktop) {
-		top: 170px;
-		right: 200px;
+		top: 160px;
+		right: 90px;
 	}
 
 	&__circle {
@@ -336,8 +345,8 @@
 		display: none;
 	}
 	@media screen and (min-width: $desktop) {
-		top: 265px;
-		right: 200px;
+		top: 250px;
+		right: 90px;
 	}
 
 	&__circle {
@@ -393,14 +402,14 @@
 .ice-cream-pic {
 	position: absolute;
 	bottom: 0px;
-	right: 32px;
+	right: 20px;
 
 	@media screen and (min-width: $tablet) {
 		right: 240px;
 	}
 
 	@media screen and (min-width: $desktop) {
-		left: 800px;
+		left: 600px;
 	}
 }
 .slide-pic-icecream {
@@ -416,7 +425,7 @@
 		display: none;
 	}
 	@media screen and (min-width: $desktop) {
-		right: 200px;
+		right: 100px;
 	}
 }
 .hero__slider-slide {
