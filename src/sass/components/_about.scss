@@ -2,18 +2,6 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
-	@media screen and (min-width: $mobile) {
-		width: 330px;
-	}
-
-	@media screen and (min-width: $tablet) {
-		width: 768px;
-	}
-
-	@media screen and (min-width: $desktop) {
-		min-width: 1200px;
-	}
 }
 
 .about {
