@@ -1,7 +1,7 @@
 .header-hero__container {
-	position: relative;
 	height: 502px;
 	padding: 6px 20px 0px 20px;
+	position: relative;
 
 	@media screen and (min-width: $tablet) {
 		height: 399px;
@@ -10,7 +10,7 @@
 
 	@media screen and (min-width: $desktop) {
 		height: 665px;
-		padding: 37px 20px 0px 46px;
+		padding-left: 37px;
 	}
 }
 
@@ -20,6 +20,10 @@
 	&__nav {
 		display: flex;
 		align-items: center;
+		justify-content: center;
+		@media screen and (min-width: $tablet) {
+			justify-content: space-evenly;
+		}
 	}
 
 	&__navigation-list {
@@ -111,7 +115,7 @@
 		}
 
 		@media screen and (min-width: $desktop) {
-			left: 69px;
+			left: 20px;
 			margin-top: 84px;
 		}
 	}
@@ -221,9 +225,6 @@
 		align-items: center;
 		margin-top: 20px;
 		padding-left: 0px;
-		@media screen and (min-width: $desktop) {
-			padding-left: 50px;
-		}
 	}
 	&__adv-wrap {
 		width: 450px;
@@ -291,7 +292,7 @@
 	}
 
 	@media screen and (min-width: $desktop) {
-		top: 160px;
+		top: 170px;
 		right: 90px;
 	}
 
@@ -338,7 +339,7 @@
 		display: none;
 	}
 	@media screen and (min-width: $desktop) {
-		top: 250px;
+		top: 265px;
 		right: 90px;
 	}
 
