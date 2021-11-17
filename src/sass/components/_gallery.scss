@@ -1,8 +1,14 @@
 .gallery-section {
+	padding-bottom: 80px;
 	background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
+
+	@media (max-width: 767px) {
+		padding-bottom: 100px;
+	}
 }
 
 .gallery {
+	padding-top: 44px;
 	position: relative;
 
 	display: flex;
