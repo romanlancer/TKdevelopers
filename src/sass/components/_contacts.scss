@@ -4,6 +4,10 @@
 	background-size: contain;
 	background-position-y: 20%;
 	padding-bottom: 113px;
+	@media screen and (min-width: $tablet) {
+		padding-bottom: 165px;
+		
+	}
 	@media screen and (min-width: $desktop) {
 		background-image: url('../images/color_plums.png'),
 			linear-gradient(to bottom, #ffffff 84px, #fff5f6 40px);
@@ -170,15 +174,16 @@
 }
 .contacts__wrapper {
 	margin-top: 54px;
+	margin-bottom: -10px;
 
 	@media screen and (min-width: $tablet) {
 		@include centralFlex();
 		margin-top: 81px;
-		padding-bottom: 158px;
+		
 	}
 	@media screen and (min-width: $desktop) {
 		margin-top: 86px;
-		padding-bottom: 165px;
+		
 	}
 }
 
@@ -189,6 +194,10 @@
 	@include objectForm(160px, 44px, 22px);
 	@include fonts(1.3, 700, 16px, center, 0.04em, none);
 	align-items: center;
+	&:not(:last-child){
+		margin-bottom: 10px;
+	}
+	
 	@media screen and (min-width: $tablet) {
 		@include centralFlex();
 		margin: 0;
