@@ -7,10 +7,18 @@
 
   refs.openModalBtnicecream.addEventListener('click', toggleModal);
   refs.closeModalBtniicecream.addEventListener('click', toggleModal);
+  refs.modalicecream.addEventListener('click', removeModal);
+
 
   function toggleModal() {
     refs.modalicecream.classList.toggle('products__backdrop_is-hidden');
   }
+
+  function removeModal(e) {
+		if (e.target === refs.modalicecream) {
+			refs.modalicecream.classList.add('products__backdrop_is-hidden');
+		}
+	}
 })();
 
 (() => {
@@ -22,9 +30,16 @@
 
   refs.openModalBtnicecoffee.addEventListener('click', toggleModal);
   refs.closeModalBtnicecoffee.addEventListener('click', toggleModal);
+  refs.modalicecoffee.addEventListener('click', removeModal);
 
   function toggleModal() {
     refs.modalicecoffee.classList.toggle('products__backdrop_is-hidden');
+  }
+
+  function removeModal(e) {
+    if (e.target === refs.modalicecoffee) {
+      refs.modalicecoffee.classList.add('products__backdrop_is-hidden');
+    }
   }
 })();
 (() => {
@@ -36,8 +51,14 @@
 
   refs.openModalBtnmilkshake.addEventListener('click', toggleModal);
   refs.closeModalBtnmilkshake.addEventListener('click', toggleModal);
+  refs.modalmilkshake.addEventListener('click', removeModal);
 
   function toggleModal() {
     refs.modalmilkshake.classList.toggle('products__backdrop_is-hidden');
+  }
+  function removeModal(e) {
+    if (e.target === refs.modalmilkshake) {
+      refs.modalmilkshake.classList.add('products__backdrop_is-hidden');
+    }
   }
 })();
