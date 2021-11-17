@@ -2,16 +2,14 @@
 	display: block;
 	background-color: #fff5f6;
 	padding-top: 40px;
-	padding-bottom: 40px;
-	// margin: 0, auto;
+	padding-bottom: 90px;
 	@media screen and (min-width: $tablet) {
+		display: flex;
 		padding-top: 70px;
-		padding-bottom: 70px;
+		padding-bottom: 130px;
 	}
-	// @media screen and (min-width: $desktop) {
-	// 	padding-top: 40px;
-	// 	padding-bottom: 40px;
-	// }
+	@media screen and (min-width: $desktop) {
+		padding-top: 40px;
 
 	&__list {
 		@media screen and (min-width: $tablet) {
