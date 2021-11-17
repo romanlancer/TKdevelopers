@@ -75,6 +75,10 @@
 			top: 68px;
 		}
 	}
+	@media screen and (min-width: $desktop) {
+		font-size: 30px;
+		line-height: calc(34 / 30);
+	}
 }
 
 .products__list {
