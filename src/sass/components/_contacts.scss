@@ -96,13 +96,15 @@
 	}
 }
 .contacts__text {
-	padding-left: 20px;
 	padding-top: 10px;
-	@include fonts(1.5, 500, 12px, left, 0.04em, none);
-	color: var(--third-text-color);
+	padding-right: 20px;
 	padding-bottom: 25px;
+	padding-left: 20px;	
+	@include fonts(1.5, 500, 12px, left, 0.04em, none);
+	color: var(--third-text-color);	
 	@media screen and (min-width: $tablet) {
 		padding-left: 31px;
+		padding-right: 31px;
 		font-size: 14px;
 		line-height: 1.87;
 		padding-bottom: 30px;
@@ -110,6 +112,7 @@
 	@media screen and (min-width: $desktop) {
 		font-size: 16px;
 		padding-left: 43px;
+		padding-right: 44px;
 		padding-bottom: 32px;
 	}
 }
