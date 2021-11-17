@@ -1,13 +1,17 @@
 .advantages {
 	display: block;
 	background-color: #fff5f6;
-	padding: 40px 100px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	// margin: 0, auto;
 	@media screen and (min-width: $tablet) {
-		padding: 70px 140px;
+		padding-top: 70px;
+		padding-bottom: 70px;
 	}
-	@media screen and (min-width: $desktop) {
-		padding: 40px 140px;
-	}
+	// @media screen and (min-width: $desktop) {
+	// 	padding-top: 40px;
+	// 	padding-bottom: 40px;
+	// }
 
 	&__list {
 		@media screen and (min-width: $tablet) {
