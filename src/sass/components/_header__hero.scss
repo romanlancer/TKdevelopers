@@ -17,17 +17,16 @@
 		width: 1050px;
 		height: 665px;
 		padding: 0;
-		
 	}
 }
-.logo{
+.logo {
 	position: absolute;
 	top: 37px;
 	left: -70px;
-	@media screen and (max-width: 1279px){
+	@media screen and (max-width: 1279px) {
 		position: relative;
 		top: 0;
-		left: 0;	
+		left: 0;
 	}
 }
 
@@ -36,15 +35,15 @@
 	&__nav {
 		display: flex;
 		align-items: baseline;
-    	justify-content: flex-end;
-		
+		justify-content: flex-end;
+
 		@media screen and (max-width: 1279px) {
 			padding-top: 37px;
-   			align-items: center;			
-		}	
+			align-items: center;
+		}
 		@media screen and (max-width: 767px) {
-			padding-top: 6px;			
-		}	
+			padding-top: 6px;
+		}
 	}
 
 	&__navigation-list {
@@ -420,6 +419,7 @@
 		height: 190px;
 	}
 }
+
 .ice-cream-pic {
 	position: absolute;
 	bottom: 0px;
@@ -431,8 +431,109 @@
 
 	@media screen and (min-width: $desktop) {
 		left: 460px;
+		display: none;
 	}
 }
+
+// Стили для анимации мороженкого по частям, НАЧАЛО
+
+.ice-cream {
+	position: relative;
+	display: none;
+
+	@media (max-width: 1279px) {
+		display: none;
+	}
+
+	@media (min-width: $desktop) {
+		display: block;
+	}
+}
+
+.ice1 {
+	width: 20%;
+	position: absolute;
+	// top: 246px;
+	// left: 302px;
+
+	top: -135px;
+	right: 350px;
+	animation-delay: 200ms;
+
+	z-index: 1;
+}
+
+.ice2 {
+	width: 20%;
+	position: absolute;
+	// top: 214px;
+	// left: 302px;
+	top: -180px;
+	right: 350px;
+	animation-delay: 400ms;
+
+	z-index: 2;
+}
+
+.ice3 {
+	width: 20%;
+	position: absolute;
+	// top: 190px;
+	// left: 302px;
+	top: -210px;
+	right: 350px;
+	animation-delay: 600ms;
+	z-index: 3;
+}
+
+.ice4 {
+	width: 20%;
+	position: absolute;
+	// top: 163px;
+	// left: 302px;
+	top: -250px;
+	right: 350px;
+	animation-delay: 800ms;
+
+	z-index: 4;
+}
+
+.ice5 {
+	width: 20%;
+	position: absolute;
+	// top: 125px;
+	// left: 302px;
+	top: -310px;
+	right: 350px;
+	animation-delay: 1000ms;
+	z-index: 5;
+}
+
+.ice6 {
+	width: 20%;
+	position: absolute;
+	// top: 75px;
+	// left: 302px;
+	top: -375px;
+	right: 350px;
+	animation-delay: 1200ms;
+	z-index: 6;
+}
+
+.ice7 {
+	width: 20%;
+	position: absolute;
+	// top: 15px;
+	// left: 302px;
+	top: -460px;
+	right: 350px;
+	animation-delay: 1400ms;
+
+	z-index: 7;
+}
+
+// Стили для анимации мороженкого по частям, КОНЕЦ
+
 .slide-pic-icecream {
 	padding-top: 35px;
 	vertical-align: middle;
