@@ -447,6 +447,9 @@
 
 	@media (min-width: $desktop) {
 		display: block;
+		width: 1200px;
+		right: 160px;
+		top: -22px;
 	}
 }
 
@@ -468,7 +471,7 @@
 	position: absolute;
 	// top: 214px;
 	// left: 302px;
-	top: -180px;
+	top: -185px;
 	right: 350px;
 	animation-delay: 400ms;
 
@@ -480,7 +483,7 @@
 	position: absolute;
 	// top: 190px;
 	// left: 302px;
-	top: -210px;
+	top: -220px;
 	right: 350px;
 	animation-delay: 600ms;
 	z-index: 3;
@@ -491,7 +494,7 @@
 	position: absolute;
 	// top: 163px;
 	// left: 302px;
-	top: -250px;
+	top: -265px;
 	right: 350px;
 	animation-delay: 800ms;
 
@@ -503,7 +506,7 @@
 	position: absolute;
 	// top: 125px;
 	// left: 302px;
-	top: -310px;
+	top: -330px;
 	right: 350px;
 	animation-delay: 1000ms;
 	z-index: 5;
@@ -514,7 +517,7 @@
 	position: absolute;
 	// top: 75px;
 	// left: 302px;
-	top: -375px;
+	top: -410px;
 	right: 350px;
 	animation-delay: 1200ms;
 	z-index: 6;
@@ -525,7 +528,7 @@
 	position: absolute;
 	// top: 15px;
 	// left: 302px;
-	top: -460px;
+	top: -520px;
 	right: 350px;
 	animation-delay: 1400ms;
 
