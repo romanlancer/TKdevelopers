@@ -52,7 +52,7 @@ html.no-scroll {
 
 	&__close {
 		position: absolute;
-		right: 28px;
+		right: 20px;
 		top: -37px;
 		background-color: var(--mobile-menu-background-color);
 		border: none;
@@ -95,6 +95,10 @@ html.no-scroll {
 
 	&__nav-link {
 		display: block;
+		max-width: 480px;
+		margin-left: auto;
+		margin-right: auto;	
+		position: relative;
 		padding-left: 21px;
 		padding-top: 12px;
 		padding-bottom: 12px;
@@ -111,6 +115,16 @@ html.no-scroll {
 			color: var(--accent-and-text-color);
 		}
 	}
+}
+
+.top-close-menu{
+	max-width: 480px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+
 }
 .is-open .mobile-menu__nav-item:nth-child(1) {
 	transform: translateX(0);
